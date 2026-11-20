@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* LatvianMealPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* LatvianMealPlannerApp.swift */; };
+		A10000020000000000000001 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000001 /* Recipe.swift */; };
+		A10000030000000000000001 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000001 /* Ingredient.swift */; };
+		A10000040000000000000001 /* MealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000040000000000000001 /* MealPlan.swift */; };
+		A10000050000000000000001 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000001 /* ShoppingList.swift */; };
+		A10000060000000000000001 /* KitchenInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000060000000000000001 /* KitchenInventory.swift */; };
+		A10000070000000000000001 /* RecipeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000070000000000000001 /* RecipeDatabase.swift */; };
+		A10000080000000000000001 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000080000000000000001 /* RecipeService.swift */; };
+		A10000090000000000000001 /* RecipeUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000090000000000000001 /* RecipeUpdateService.swift */; };
+		A1000010000000000000001 /* ShoppingListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010000000000000001 /* ShoppingListService.swift */; };
+		A10000110000000000000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000110000000000000001 /* HomeView.swift */; };
+		A10000120000000000000001 /* MealPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000120000000000000001 /* MealPlanView.swift */; };
+		A10000130000000000000001 /* RecipeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000130000000000000001 /* RecipeSearchView.swift */; };
+		A10000140000000000000001 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000140000000000000001 /* ShoppingListView.swift */; };
+		A10000150000000000000001 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000150000000000000001 /* recipes.json */; };
+		A10000160000000000000001 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20000160000000000000001 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* LatvianMealPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianMealPlannerApp.swift; sourceTree = "<group>"; };
+		A20000020000000000000001 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A20000030000000000000001 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		A20000040000000000000001 /* MealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlan.swift; sourceTree = "<group>"; };
+		A20000050000000000000001 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		A20000060000000000000001 /* KitchenInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenInventory.swift; sourceTree = "<group>"; };
+		A20000070000000000000001 /* RecipeDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDatabase.swift; sourceTree = "<group>"; };
+		A20000080000000000000001 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
+		A20000090000000000000001 /* RecipeUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUpdateService.swift; sourceTree = "<group>"; };
+		A2000010000000000000001 /* ShoppingListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListService.swift; sourceTree = "<group>"; };
+		A20000110000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20000120000000000000001 /* MealPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanView.swift; sourceTree = "<group>"; };
+		A20000130000000000000001 /* RecipeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchView.swift; sourceTree = "<group>"; };
+		A20000140000000000000001 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		A20000150000000000000001 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		A20000160000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30000010000000000000001 /* LatvianMealPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatvianMealPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000020000000000000001 /* Sources */,
+				A50000030000000000000001 /* Resources */,
+				A50000040000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000020000000000000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* LatvianMealPlannerApp.swift */,
+				A50000050000000000000001 /* Models */,
+				A50000060000000000000001 /* Data */,
+				A50000070000000000000001 /* Services */,
+				A50000080000000000000001 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A50000050000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000020000000000000001 /* Recipe.swift */,
+				A20000030000000000000001 /* Ingredient.swift */,
+				A20000040000000000000001 /* MealPlan.swift */,
+				A20000050000000000000001 /* ShoppingList.swift */,
+				A20000060000000000000001 /* KitchenInventory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A50000060000000000000001 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A20000070000000000000001 /* RecipeDatabase.swift */,
+				A20000150000000000000001 /* recipes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A50000070000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000080000000000000001 /* RecipeService.swift */,
+				A20000090000000000000001 /* RecipeUpdateService.swift */,
+				A2000010000000000000001 /* ShoppingListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A50000080000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000110000000000000001 /* HomeView.swift */,
+				A20000120000000000000001 /* MealPlanView.swift */,
+				A20000130000000000000001 /* RecipeSearchView.swift */,
+				A20000140000000000000001 /* ShoppingListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A50000030000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000160000000000000001 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A50000040000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30000010000000000000001 /* LatvianMealPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000010000000000000001 /* LatvianMealPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000010000000000000001 /* Build configuration list for PBXNativeTarget "LatvianMealPlanner" */;
+			buildPhases = (
+				A80000010000000000000001 /* Sources */,
+				A40000010000000000000001 /* Frameworks */,
+				A80000020000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LatvianMealPlanner;
+			productName = LatvianMealPlanner;
+			productReference = A30000010000000000000001 /* LatvianMealPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1400;
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = A70000020000000000000001 /* Build configuration list for PBXProject "LatvianMealPlanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50000010000000000000001;
+			productRefGroup = A50000040000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000010000000000000001 /* LatvianMealPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80000020000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000150000000000000001 /* recipes.json in Resources */,
+				A10000160000000000000001 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* LatvianMealPlannerApp.swift in Sources */,
+				A10000020000000000000001 /* Recipe.swift in Sources */,
+				A10000030000000000000001 /* Ingredient.swift in Sources */,
+				A10000040000000000000001 /* MealPlan.swift in Sources */,
+				A10000050000000000000001 /* ShoppingList.swift in Sources */,
+				A10000060000000000000001 /* KitchenInventory.swift in Sources */,
+				A10000070000000000000001 /* RecipeDatabase.swift in Sources */,
+				A10000080000000000000001 /* RecipeService.swift in Sources */,
+				A10000090000000000000001 /* RecipeUpdateService.swift in Sources */,
+				A1000010000000000000001 /* ShoppingListService.swift in Sources */,
+				A10000110000000000000001 /* HomeView.swift in Sources */,
+				A10000120000000000000001 /* MealPlanView.swift in Sources */,
+				A10000130000000000000001 /* RecipeSearchView.swift in Sources */,
+				A10000140000000000000001 /* ShoppingListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latvianmealplanner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+			};
+			name = Debug;
+		};
+		B10000020000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latvianmealplanner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+			};
+			name = Release;
+		};
+		B10000030000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		B10000040000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000010000000000000001 /* Build configuration list for PBXNativeTarget "LatvianMealPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000010000000000000001 /* Debug */,
+				B10000020000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000020000000000000001 /* Build configuration list for PBXProject "LatvianMealPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000030000000000000001 /* Debug */,
+				B10000040000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000010000000000000001 /* Project object */;
+}

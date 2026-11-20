@@ -14,6 +14,7 @@ workflows:
         script: |
           set -e
           xcodebuild \
+            -project LatvianMealPlanner.xcodeproj \
             -scheme LatvianMealPlanner \
             -configuration Release \
             -destination "generic/platform=iOS" \
@@ -25,22 +26,16 @@ workflows:
       - name: Package IPA
         script: |
           set -e
-          BIN_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "LatvianMealPlanner" -type f -maxdepth 1 | head -1)
-          if [ -z "$BIN_PATH" ]; then
-            echo "No binary found"
+          APP_PATH="build/DerivedData/Build/Products/Release-iphoneos/LatvianMealPlanner.app"
+          if [ ! -d "$APP_PATH" ]; then
+            echo "No .app bundle found at $APP_PATH"
+            find build/DerivedData -name "*.app" -type d 2>/dev/null
             exit 1
           fi
-          echo "Found binary: $BIN_PATH"
-          APP_DIR="build/IPA/Payload/LatvianMealPlanner.app"
-          mkdir -p "$APP_DIR"
-          cp "$BIN_PATH" "$APP_DIR/LatvianMealPlanner"
-          cp Resources/Info.plist "$APP_DIR/Info.plist"
-          if [ -f Sources/Data/recipes.json ]; then
-            cp Sources/Data/recipes.json "$APP_DIR/recipes.json"
-          fi
-          cd build/IPA
-          zip -r -X ../LatvianMealPlanner.ipa Payload
-          cd ../..
+          echo "Found .app bundle: $APP_PATH"
+          mkdir -p build/IPA/Payload
+          cp -R "$APP_PATH" build/IPA/Payload/
+          (cd build/IPA && zip -r -X ../LatvianMealPlanner.ipa Payload)
           ls -la build/LatvianMealPlanner.ipa
     artifacts:
       - build/LatvianMealPlanner.ipa
