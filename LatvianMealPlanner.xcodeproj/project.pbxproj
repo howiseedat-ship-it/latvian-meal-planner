@@ -188,7 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000150000000000000001 /* recipes.json in Resources */,
-				A10000160000000000000001 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
