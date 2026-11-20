@@ -3,8 +3,7 @@ import Foundation
 final class RecipeUpdateService {
     static let shared = RecipeUpdateService()
 
-    // Replace with your actual GitHub repo URL
-    private let recipesURL = URL(string: "https://raw.githubusercontent.com/yourusername/latvian-meal-planner-recipes/main/recipes.json")!
+    private let recipesURL = URL(string: "https://raw.githubusercontent.com/howiseedat-ship-it/latvian-meal-planner-recipes/main/recipes.json")!
     private let versionKey = "recipes_version"
     private let recipesCacheKey = "recipes_cache"
     private let lastUpdateKey = "recipes_last_update"
