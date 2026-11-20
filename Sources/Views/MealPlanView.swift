@@ -41,7 +41,7 @@ struct MealPlanView: View {
 
             Spacer()
 
-            Text(currentWeekStart, format: .dateTime.month().monthWidth(.abbreviated).day())
+            Text(currentWeekStart, format: .dateTime.month(.abbreviated).day())
                 .font(.headline)
 
             Spacer()

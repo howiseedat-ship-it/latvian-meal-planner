@@ -246,11 +246,3 @@ final class RecipeDatabase {
         ]
     }
 }
-
-struct RecipeMatch {
-    let recipe: Recipe
-    let matchCount: Int
-    let totalIngredients: Int
-    let matchRatio: Double
-    let missingIngredients: [RecipeIngredient]
-}
