@@ -1,0 +1,61 @@
+name: Build IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Diagnostics
+        run: |
+          echo "=== DIAG START $(date -u) ==="
+          sw_vers
+          xcodebuild -version
+          swift --version
+          echo "=== DIAG END $(date -u) ==="
+
+      - name: Validate recipes JSON
+        run: |
+          python3 -c "import json; json.load(open('Sources/Data/recipes.json')); print('Recipes JSON valid')"
+
+      - name: Build iOS app
+        run: |
+          set -e
+          echo "=== BUILD START $(date -u) ==="
+          xcodebuild \
+            -scheme LatvianMealPlanner \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+          echo "=== BUILD END $(date -u) ==="
+
+      - name: Package IPA
+        run: |
+          set -e
+          APP_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "*.app" -maxdepth 1 | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "No .app found"
+            exit 1
+          fi
+          mkdir -p build/IPA/Payload
+          cp -R "$APP_PATH" build/IPA/Payload/
+          (cd build/IPA && zip -r -X ../LatvianMealPlanner.ipa Payload)
+          ls -la build/LatvianMealPlanner.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LatvianMealPlanner
+          path: build/LatvianMealPlanner.ipa
+          retention-days: 30

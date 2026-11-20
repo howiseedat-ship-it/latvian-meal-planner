@@ -1,0 +1,4805 @@
+[
+  {
+    "id": "034af696-5c3f-48cd-8082-92e74eeda5a2",
+    "name": "Latvian Rye Bread",
+    "nameLV": "Latvijas rudzu maize",
+    "description": "Traditional dense Latvian rye bread with caraway seeds.",
+    "ingredients": [
+      {
+        "id": "5b264130-7848-44d1-9b70-22ec23ea43c9",
+        "ingredientName": "rye flour",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "88f8581e-1965-4f55-b265-444728143198",
+        "ingredientName": "sourdough starter",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "496eebb5-7217-43ac-bbc5-64625873d26a",
+        "ingredientName": "water",
+        "quantity": 400,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "cb6b42aa-923e-4c54-a259-1898ebc8f9f2",
+        "ingredientName": "salt",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "740414ee-8c7f-405f-bb81-4fce145ea5b1",
+        "ingredientName": "caraway seeds",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": true
+      }
+    ],
+    "steps": [
+      "Mix rye flour, sourdough starter, and water.",
+      "Add salt and caraway, knead 10 min.",
+      "Cover and let rise 8-12 hours.",
+      "Shape into loaf, bake at 220C for 15 min.",
+      "Reduce to 180C, bake 45 more minutes. Cool before slicing."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 60,
+    "servings": 8,
+    "caloriesPerServing": 180,
+    "proteinPerServing": 6,
+    "carbsPerServing": 35,
+    "fatsPerServing": 2,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "Latvian",
+    "difficulty": "medium",
+    "equipment": [
+      "bread-machine",
+      "mixing-bowl",
+      "loaf-pan"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "c68d3ea7-99c2-4bd3-86a6-b9f0f02f5b69",
+    "name": "Pierogi with Potato",
+    "nameLV": "Pīrāgi ar kartupeļiem",
+    "description": "Latvian-style pierogi filled with mashed potato and onion.",
+    "ingredients": [
+      {
+        "id": "220db6a8-cca0-42cb-8188-58a00ff70b44",
+        "ingredientName": "flour",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d80af756-f510-476e-955a-8772c778ec54",
+        "ingredientName": "potatoes",
+        "quantity": 400,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "1bf1dafa-b2a2-4c77-976a-3c260292b715",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "a11b43c4-f37f-4f85-95f6-39e458170144",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "eae929c8-4183-4410-90bf-0a777fbbeecd",
+        "ingredientName": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "16bf6f12-70bb-4384-a42a-276511b598f1",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Boil and mash potatoes with butter and salt.",
+      "Mix flour with egg and water to make dough.",
+      "Roll dough thin, cut circles.",
+      "Place potato filling in center, fold and seal edges.",
+      "Boil pierogi in salted water for 5 minutes until they float."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 8,
+    "carbsPerServing": 55,
+    "fatsPerServing": 8,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Latvian",
+    "difficulty": "medium",
+    "equipment": [
+      "pot",
+      "rolling-pin",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "80fc3537-3284-40ab-84b6-b0e581b0349e",
+    "name": "Sklandrausis Cake",
+    "nameLV": "Sklandrausis",
+    "description": "Traditional Latvian layered cake with prune and cream filling.",
+    "ingredients": [
+      {
+        "id": "029af861-7d01-4b86-81bb-707338eae383",
+        "ingredientName": "rye flour",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "291e59bc-79eb-4a24-aceb-93ac5221235e",
+        "ingredientName": "prunes",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a13f91e2-2c42-491f-b169-81719224aaf5",
+        "ingredientName": "butter",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "12be0ba5-4f75-4701-8ba2-6b363f856d3f",
+        "ingredientName": "sugar",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c92b0152-85c4-40bf-b193-6ac91b5630b6",
+        "ingredientName": "cream",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "77429f23-51e6-44e2-a3a1-9b79dd6b93fd",
+        "ingredientName": "cinnamon",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "9fa7c75f-c820-4bc6-b0df-904a27fa5bf6",
+        "ingredientName": "eggs",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Soak prunes in warm water, chop finely.",
+      "Mix rye flour with butter and sugar for base.",
+      "Press base into a round cake pan.",
+      "Spread prune filling over base.",
+      "Whisk eggs with cream and cinnamon, pour over filling.",
+      "Bake at 180C for 50 minutes until golden."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 50,
+    "servings": 8,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 6,
+    "carbsPerServing": 52,
+    "fatsPerServing": 15,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Latvian",
+    "difficulty": "hard",
+    "equipment": [
+      "oven",
+      "mixing-bowl",
+      "cake-pan",
+      "whisk"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "8951e792-b13b-465d-975d-d59eab7768bd",
+    "name": "Latvian Meatballs",
+    "nameLV": "Gaļas bumbiņas",
+    "description": "Juicy Latvian meatballs in creamy tomato sauce.",
+    "ingredients": [
+      {
+        "id": "a11b8e4e-f8ab-4d75-8856-2a4b8d36ea8f",
+        "ingredientName": "ground beef",
+        "quantity": 400,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "de0ba320-75d5-4b58-8374-52ffc7e9b9a0",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "314c4901-cbf2-4c11-b8af-704a65a9c58f",
+        "ingredientName": "bread crumbs",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "7bd91fec-cdc8-43a7-936d-81eae04b1ce9",
+        "ingredientName": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "cf740abd-a175-4f5c-b428-e132bad14cbc",
+        "ingredientName": "tomato sauce",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "1cafad99-0301-4604-a20f-936664f8a094",
+        "ingredientName": "cream",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "e25a270f-38b1-4747-8663-5420cb5eb7e4",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3b2e6190-b109-44b4-b1b8-e43bd7cd880c",
+        "ingredientName": "black pepper",
+        "quantity": 2,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix ground beef with grated onion, breadcrumbs, egg, salt and pepper.",
+      "Form into 2cm meatballs.",
+      "Brown meatballs in a pan with oil.",
+      "Add tomato sauce and cream, simmer for 20 minutes.",
+      "Serve with mashed potatoes or rice."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 30,
+    "carbsPerServing": 15,
+    "fatsPerServing": 25,
+    "dietaryTags": [],
+    "cuisine": "Latvian",
+    "difficulty": "easy",
+    "equipment": [
+      "pan",
+      "mixing-bowl",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "07da6cfa-2667-4d93-83fe-b11afdd93c5e",
+    "name": "Eggs Benedict",
+    "nameLV": "Oliveru bēnediktins",
+    "description": "Classic eggs Benedict with hollandaise sauce.",
+    "ingredients": [
+      {
+        "id": "96761a39-6dbe-4878-9d65-6faf4b9129c7",
+        "ingredientName": "English muffins",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f6a40e97-7fbc-4d3b-8d1b-d568a6bd2673",
+        "ingredientName": "eggs",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "df29214c-43ce-4d4e-baa3-a2eb46071f5e",
+        "ingredientName": "bacon",
+        "quantity": 4,
+        "unit": "slices",
+        "isOptional": false
+      },
+      {
+        "id": "d06bc5af-1dd5-4e65-8116-bdf59cc57342",
+        "ingredientName": "butter",
+        "quantity": 60,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "967a4c15-e33b-48cc-b085-6a2b8238f2c6",
+        "ingredientName": "lemon juice",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "2c3c6552-4831-4752-92ec-d3baaaefb384",
+        "ingredientName": "mustard",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Poach eggs in simmering water for 3 minutes.",
+      "Fry bacon until crisp.",
+      "Whisk butter with lemon juice and mustard for hollandaise.",
+      "Split muffins, toast lightly.",
+      "Assemble: muffin, bacon, egg, hollandaise."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 22,
+    "carbsPerServing": 25,
+    "fatsPerServing": 30,
+    "dietaryTags": [],
+    "cuisine": "American",
+    "difficulty": "medium",
+    "equipment": [
+      "saucepan",
+      "pan",
+      "knife"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "fc4ca46b-6a3a-422b-a1e3-450021d110c7",
+    "name": "Greek Salad",
+    "nameLV": "Grieķu salāti",
+    "description": "Fresh Mediterranean salad with feta cheese.",
+    "ingredients": [
+      {
+        "id": "382708ef-9cb8-49bc-9ac2-d3fe0423ed68",
+        "ingredientName": "cucumber",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "0f7e3de5-2d89-4df8-b073-01fe05939af6",
+        "ingredientName": "tomatoes",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "2af05a6a-10b6-402f-af00-e15933ce959e",
+        "ingredientName": "red onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "fdf2d165-1f88-4555-9411-2651658546a1",
+        "ingredientName": "feta cheese",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "55f9ae5e-7ba9-46b3-995b-6c57bd842635",
+        "ingredientName": "olives",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b07e8b66-9fa4-4a45-8003-a41e2c0d9b41",
+        "ingredientName": "olive oil",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "71ba2373-72d2-4a67-9122-1ceb2dd813d8",
+        "ingredientName": "oregano",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Chop cucumber, tomatoes, and onion.",
+      "Arrange vegetables in a bowl.",
+      "Crumble feta cheese over top.",
+      "Add olives.",
+      "Drizzle with olive oil and sprinkle oregano."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 0,
+    "servings": 2,
+    "caloriesPerServing": 280,
+    "proteinPerServing": 12,
+    "carbsPerServing": 8,
+    "fatsPerServing": 24,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Greek",
+    "difficulty": "easy",
+    "equipment": [
+      "knife",
+      "cutting-board",
+      "mixing-bowl"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "2c58af83-6edd-42ad-a2dc-e46dd6b967e9",
+    "name": "Pancakes",
+    "nameLV": "Placītes",
+    "description": "Fluffy Latvian-style pancakes.",
+    "ingredients": [
+      {
+        "id": "d1ba1121-b606-4bd6-990e-b1bf8c8f3573",
+        "ingredientName": "flour",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "0d215f8c-275f-4599-8053-8c1debe238ef",
+        "ingredientName": "milk",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "7928c3e3-8ff9-4e0d-9849-96017c9bbb7b",
+        "ingredientName": "eggs",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f7469413-bbae-4523-bb58-571d97bc3825",
+        "ingredientName": "sugar",
+        "quantity": 20,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3bf0c9b2-c411-4db3-9691-a05f256aaf73",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "bd763188-d9b8-4fa8-9fd9-553472a8e250",
+        "ingredientName": "vanilla",
+        "quantity": 5,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix flour, sugar, eggs, and milk into smooth batter.",
+      "Melt butter and let cool slightly, stir into batter.",
+      "Heat a non-stick pan, pour small circles of batter.",
+      "Cook until bubbles form, flip and cook other side.",
+      "Serve with jam, honey, or sour cream."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "caloriesPerServing": 220,
+    "proteinPerServing": 6,
+    "carbsPerServing": 32,
+    "fatsPerServing": 9,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Latvian",
+    "difficulty": "easy",
+    "equipment": [
+      "non-stick-pan",
+      "mixing-bowl",
+      "whisk"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "ab1395fa-c101-4082-9843-0ed7c4a0d7a4",
+    "name": "Quinoa Bowl",
+    "nameLV": "Kinu salātu bļoda",
+    "description": "Healthy quinoa bowl with roasted vegetables.",
+    "ingredients": [
+      {
+        "id": "7b77046e-36e7-4e64-915d-a165ed0d39d8",
+        "ingredientName": "quinoa",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "88af1ddf-0abd-40ec-b849-95cfdf6b4c9c",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "06728e1e-665c-4a80-bcd0-bde65ef287b7",
+        "ingredientName": "zucchini",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "af438161-8db8-4352-8dd2-b72fb3d9fd81",
+        "ingredientName": "chickpeas",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "952729e4-64c9-4946-affc-385e803efdbc",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "606152ac-361c-42e6-99a1-fa88ed19656f",
+        "ingredientName": "lemon",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "7b316661-480e-4cca-a0af-086fcbebfb21",
+        "ingredientName": "cumin",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f0855a5d-6e67-4af5-9969-30fa75030d17",
+        "ingredientName": "salt",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook quinoa according to package instructions.",
+      "Dice vegetables, toss with oil and cumin.",
+      "Roast vegetables at 200C for 20 minutes.",
+      "Rinse chickpeas.",
+      "Assemble bowl: quinoa base, roasted vegetables, chickpeas.",
+      "Squeeze lemon over top and season with salt."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 30,
+    "servings": 2,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 14,
+    "carbsPerServing": 52,
+    "fatsPerServing": 12,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "equipment": [
+      "oven",
+      "baking-sheet",
+      "pot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "6b06e84f-cdd5-4a7f-8ca3-94ba5a9a4adb",
+    "name": "Lentil Soup",
+    "nameLV": "Lēcu zupa",
+    "description": "Hearty vegan lentil soup with vegetables.",
+    "ingredients": [
+      {
+        "id": "1cb7cbc4-c10b-47ea-9d13-60e58aafd6d0",
+        "ingredientName": "red lentils",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "9412a54a-b8c5-44e9-aa8b-b6bb0b33f6fe",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "61d15d45-4f6e-412f-a4a9-64b27ba7f676",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "a82657bd-1b99-4594-b251-38e0af3a53b5",
+        "ingredientName": "celery",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "24888753-e98e-4ef4-b37f-c2101e366820",
+        "ingredientName": "vegetable broth",
+        "quantity": 1000,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "d04bd71c-99d9-4a8e-b879-27111f6e1aff",
+        "ingredientName": "cumin",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "1e71f699-0d63-4e7e-9b76-375764f6b448",
+        "ingredientName": "turmeric",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ba422d99-3a7a-4331-b7b8-f9ae14d478bb",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Chop onion, carrot, and celery.",
+      "Sauté vegetables in a pot with oil for 5 minutes.",
+      "Add lentils, broth, cumin, and turmeric.",
+      "Simmer for 25 minutes until lentils are soft.",
+      "Blend half the soup for a creamy texture.",
+      "Season with salt and serve hot."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "caloriesPerServing": 280,
+    "proteinPerServing": 18,
+    "carbsPerServing": 42,
+    "fatsPerServing": 5,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "knife",
+      "cutting-board",
+      "immersion-blender"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "79156750-292f-4f8f-80be-1c15627cc8e4",
+    "name": "Avocado Toast",
+    "nameLV": "Avokado tost",
+    "description": "Simple avocado toast with poached egg.",
+    "ingredients": [
+      {
+        "id": "e4a4a615-2bb0-4c02-95cc-f33dc03a5d57",
+        "ingredientName": "sourdough bread",
+        "quantity": 2,
+        "unit": "slices",
+        "isOptional": false
+      },
+      {
+        "id": "4c5e1954-110b-4235-a19b-982d1cfe5156",
+        "ingredientName": "avocado",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5b4432bc-c8c3-4a4f-b0fd-df17838f240e",
+        "ingredientName": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f0865df5-cf04-4faf-b7b1-202bf74cf8ed",
+        "ingredientName": "lemon juice",
+        "quantity": 5,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "e5fe9f99-8779-485e-87c6-46046bbb86b6",
+        "ingredientName": "chili flakes",
+        "quantity": 1,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b91dcfb0-286e-4ddc-ab93-ab5640e2f85e",
+        "ingredientName": "salt",
+        "quantity": 2,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Toast the bread until golden.",
+      "Mash avocado with lemon juice and salt.",
+      "Spread avocado on toast.",
+      "Poach egg for 3 minutes.",
+      "Place egg on toast, sprinkle chili flakes."
+    ],
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "servings": 1,
+    "caloriesPerServing": 350,
+    "proteinPerServing": 14,
+    "carbsPerServing": 28,
+    "fatsPerServing": 20,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "American",
+    "difficulty": "easy",
+    "equipment": [
+      "toaster-oven",
+      "saucepan",
+      "knife"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "744fec33-7d3d-45ec-82d0-6224068cf89d",
+    "name": "Chicken Teriyaki",
+    "nameLV": "Vistas teriyaki",
+    "description": "Japanese-style teriyaki chicken with rice.",
+    "ingredients": [
+      {
+        "id": "de9192f5-7be7-404c-b2fa-22e0f9d81009",
+        "ingredientName": "chicken breast",
+        "quantity": 400,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "92a2a266-5137-4295-8b57-ed94795f1a1d",
+        "ingredientName": "soy sauce",
+        "quantity": 60,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "75293b2c-0b53-45d9-b819-63f9cfa5f634",
+        "ingredientName": "honey",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "2070be9b-c8da-4276-8c34-536645ef7890",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "ae384764-bdd3-4ba8-baf2-0f9dcee0421e",
+        "ingredientName": "ginger",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5a7654b8-315f-4ca5-a4bb-357054157b65",
+        "ingredientName": "rice",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d3b173ff-2eb3-4e31-9336-46206f45a670",
+        "ingredientName": "sesame seeds",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook rice.",
+      "Mix soy sauce, honey, garlic, and ginger for marinade.",
+      "Marinate chicken for 30 minutes.",
+      "Pan-fry chicken until golden and cooked through.",
+      "Simmer remaining marinade until thickened, pour over chicken.",
+      "Serve over rice, sprinkle sesame seeds."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "caloriesPerServing": 520,
+    "proteinPerServing": 42,
+    "carbsPerServing": 55,
+    "fatsPerServing": 12,
+    "dietaryTags": [],
+    "cuisine": "Japanese",
+    "difficulty": "easy",
+    "equipment": [
+      "rice-cooker",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "1f548894-fed4-4429-96a8-6e9dda8ad11e",
+    "name": "Pad Thai",
+    "nameLV": "Pad tai",
+    "description": "Thai stir-fried rice noodles with shrimp.",
+    "ingredients": [
+      {
+        "id": "5deddbea-f395-4b36-9259-7c434f084b7d",
+        "ingredientName": "rice noodles",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ee90d64c-9bf9-475b-8163-df1c765e167b",
+        "ingredientName": "shrimp",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a10faae9-84f3-4752-ba6c-ce0602235fbb",
+        "ingredientName": "eggs",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "92da4d37-3add-4bdc-b5ea-6733aac377ba",
+        "ingredientName": "peanuts",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5b08cffc-de2d-4ea5-8d7c-27fbb8606ec0",
+        "ingredientName": "soy sauce",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "0fadf22b-7d6b-42a8-a3f2-453cf542779b",
+        "ingredientName": "lime",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "4f0d7837-3024-4e8d-bd9c-dd9a8bf96575",
+        "ingredientName": "bean sprouts",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "19b1d269-a376-423c-9a6c-8f7e085e02b3",
+        "ingredientName": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Soak rice noodles in warm water for 20 minutes.",
+      "Stir-fry shrimp with garlic for 2 minutes.",
+      "Push shrimp aside, scramble eggs in the pan.",
+      "Add noodles and soy sauce, toss well.",
+      "Add bean sprouts, cook 1 minute.",
+      "Serve with crushed peanuts and lime."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "caloriesPerServing": 480,
+    "proteinPerServing": 28,
+    "carbsPerServing": 60,
+    "fatsPerServing": 15,
+    "dietaryTags": [],
+    "cuisine": "Thai",
+    "difficulty": "medium",
+    "equipment": [
+      "wok",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "b9efc308-eb0b-4007-ad42-6830cf89ab8b",
+    "name": "Veggie Spring Rolls",
+    "nameLV": "Dārzeņu pavasara rullīši",
+    "description": "Crispy Vietnamese spring rolls with vegetables.",
+    "ingredients": [
+      {
+        "id": "12e4246f-3dc1-4f25-aca3-f0d8fbf9d31f",
+        "ingredientName": "rice paper",
+        "quantity": 8,
+        "unit": "sheets",
+        "isOptional": false
+      },
+      {
+        "id": "76d306c8-d48b-4aac-a322-3cc3cff1d4a2",
+        "ingredientName": "carrot",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "31442e76-0161-4489-bd32-16833673fea7",
+        "ingredientName": "cucumber",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "27606688-76d1-4e5c-a01a-c93e4c462229",
+        "ingredientName": "mint",
+        "quantity": 10,
+        "unit": "leaves",
+        "isOptional": false
+      },
+      {
+        "id": "8f4390b2-3bcf-46e0-9a72-7a9b21737db5",
+        "ingredientName": "vermicelli noodles",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3e2d55a6-43eb-425e-ba08-15dd6940a742",
+        "ingredientName": "peanut sauce",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Soak rice paper briefly in warm water until flexible.",
+      "Cook vermicelli noodles.",
+      "Julienne carrot and cucumber.",
+      "Place noodles and vegetables on rice paper, roll tightly.",
+      "Serve with peanut sauce for dipping."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "caloriesPerServing": 250,
+    "proteinPerServing": 6,
+    "carbsPerServing": 45,
+    "fatsPerServing": 6,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "Vietnamese",
+    "difficulty": "medium",
+    "equipment": [
+      "knife",
+      "cutting-board",
+      "mixing-bowl"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "04ff3bff-e5c3-451e-97b0-c3c1598e002f",
+    "name": "Tomato Soup",
+    "nameLV": "Tomātu zupa",
+    "description": "Creamy tomato soup with basil.",
+    "ingredients": [
+      {
+        "id": "948ae5c9-9ad5-44b8-aabe-5dd445162153",
+        "ingredientName": "tomatoes",
+        "quantity": 6,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "7229a0d9-c883-4e0a-8442-15ee395efd69",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "4b89057f-3f1e-4315-81bb-20e70f337593",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "6d5c7e16-6b07-471a-b0c3-e70d1124f2fa",
+        "ingredientName": "vegetable broth",
+        "quantity": 500,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "46c274a2-513e-4381-9fa2-e9a4b0b04a69",
+        "ingredientName": "cream",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "f728b13d-d783-4984-b9e6-d2b6966728a1",
+        "ingredientName": "basil",
+        "quantity": 10,
+        "unit": "leaves",
+        "isOptional": false
+      },
+      {
+        "id": "f4428391-105f-4e64-8d6e-ba9a8087f5f8",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c95dac5c-c188-4dcc-ab28-d04f848adbf4",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sauté onion and garlic in olive oil.",
+      "Add chopped tomatoes and broth, simmer 20 minutes.",
+      "Blend until smooth.",
+      "Stir in cream and basil.",
+      "Season with salt and serve."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "caloriesPerServing": 180,
+    "proteinPerServing": 5,
+    "carbsPerServing": 22,
+    "fatsPerServing": 8,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "immersion-blender",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "9983d6b3-3a9e-4700-a07b-6ca8d6fec25a",
+    "name": "Chicken Noodle Soup",
+    "nameLV": "Vistas zupa ar makaroniem",
+    "description": "Classic comforting chicken noodle soup.",
+    "ingredients": [
+      {
+        "id": "1efdacb5-1f0d-4096-a879-bcf452eb80f0",
+        "ingredientName": "chicken breast",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "33738fb4-cbf0-4cb2-9827-0fb0fa8d3ec0",
+        "ingredientName": "noodles",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8a8a3c07-b5bf-4c17-8a4c-47954c0d57a7",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "a8109491-b893-4947-8b22-e22ba9ad04e3",
+        "ingredientName": "celery",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "6b439ff5-3403-47a8-b977-1a077d1a7a26",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "24159283-a0ad-40c3-b2e7-c54409a1f1c1",
+        "ingredientName": "chicken broth",
+        "quantity": 1000,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "06648cb0-ff91-47fc-973a-00b1fedf4506",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5ce1465f-10be-4b9b-9625-6755d15eb3d5",
+        "ingredientName": "black pepper",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Boil chicken in broth for 20 minutes, remove and shred.",
+      "Add chopped vegetables to broth, simmer 15 minutes.",
+      "Add noodles and cook until tender.",
+      "Return shredded chicken to soup.",
+      "Season with salt and pepper, serve hot."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "caloriesPerServing": 280,
+    "proteinPerServing": 25,
+    "carbsPerServing": 35,
+    "fatsPerServing": 8,
+    "dietaryTags": [],
+    "cuisine": "American",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "aacac0f5-cf89-435b-8b1b-b6fb8a2104b7",
+    "name": "Oatmeal with Berries",
+    "nameLV": "Auzu putras ar ogām",
+    "description": "Healthy oatmeal with fresh berries and honey.",
+    "ingredients": [
+      {
+        "id": "7483cea9-5a9d-4ea0-8004-6038fb10153b",
+        "ingredientName": "oats",
+        "quantity": 80,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "314734a5-60b1-4e82-8c30-8a4cafb19e66",
+        "ingredientName": "milk",
+        "quantity": 250,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "29479356-ba5d-417d-a422-37ac283a6945",
+        "ingredientName": "berries",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f086610d-dd8a-4cdc-8288-71bd6f234df7",
+        "ingredientName": "honey",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3bce7dfc-7bd9-4c9f-83ca-a576d64d2425",
+        "ingredientName": "cinnamon",
+        "quantity": 2,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "7878f16a-2448-4b7c-92b3-4bfc3bdeb6e6",
+        "ingredientName": "walnuts",
+        "quantity": 20,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook oats with milk for 5 minutes.",
+      "Stir in cinnamon.",
+      "Top with fresh berries, honey, and walnuts."
+    ],
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "servings": 1,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 10,
+    "carbsPerServing": 50,
+    "fatsPerServing": 8,
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "cuisine": "Scandinavian",
+    "difficulty": "easy",
+    "equipment": [
+      "saucepan"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "b8b3714b-c3a6-4b6a-95a8-27cf1412077c",
+    "name": "French Toast",
+    "nameLV": "Franču tost",
+    "description": "Classic French toast with maple syrup.",
+    "ingredients": [
+      {
+        "id": "5a19fed0-4c4b-416f-9873-767a730ff279",
+        "ingredientName": "bread",
+        "quantity": 4,
+        "unit": "slices",
+        "isOptional": false
+      },
+      {
+        "id": "a88ed149-41bb-44cc-a9f2-ab50f9173a70",
+        "ingredientName": "eggs",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5dfe700c-55fc-464e-b1ca-de33db97962f",
+        "ingredientName": "milk",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "5a2ed06a-659f-40df-937a-c0828a609efa",
+        "ingredientName": "cinnamon",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "37a6f00b-f695-4b62-bec5-4fcb3fba8330",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "6a54ecae-5d70-4f85-a502-bbacfc83e04e",
+        "ingredientName": "maple syrup",
+        "quantity": 60,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Whisk eggs with milk and cinnamon.",
+      "Dip bread slices in egg mixture.",
+      "Fry in butter until golden on both sides.",
+      "Serve with maple syrup."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 12,
+    "carbsPerServing": 38,
+    "fatsPerServing": 18,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "French",
+    "difficulty": "easy",
+    "equipment": [
+      "non-stick-pan",
+      "mixing-bowl",
+      "whisk"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "6297ca0b-f384-4217-baa0-7f781b603942",
+    "name": "Chocolate Cake",
+    "nameLV": "Šokolādes kūka",
+    "description": "Moist chocolate layer cake with ganache.",
+    "ingredients": [
+      {
+        "id": "c03a670a-88cb-4f2f-9ed7-2bbd235c8780",
+        "ingredientName": "flour",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c39210d4-2693-49be-afbb-778e56be8a4e",
+        "ingredientName": "cocoa powder",
+        "quantity": 60,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "7e892819-5c9f-47f9-9982-1056f8797066",
+        "ingredientName": "sugar",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b9311cab-7a82-49b1-8ef3-f8e91193be4e",
+        "ingredientName": "eggs",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "60e5dbda-ad51-4093-813c-ef2fd2e89a0e",
+        "ingredientName": "butter",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4934ed6d-9c0b-4d44-a81d-08aaf7911232",
+        "ingredientName": "milk",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "4b5d9ed2-58ec-4016-b7e2-97a5124712db",
+        "ingredientName": "chocolate",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Preheat oven to 180C.",
+      "Mix dry ingredients: flour, cocoa, sugar.",
+      "Melt butter, mix with eggs and milk.",
+      "Combine wet and dry ingredients.",
+      "Bake in a cake pan for 35 minutes.",
+      "Melt chocolate with cream for ganache, pour over cooled cake."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 40,
+    "servings": 8,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 6,
+    "carbsPerServing": 55,
+    "fatsPerServing": 25,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "American",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "mixing-bowl",
+      "whisk",
+      "cake-pan"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "b5ec7fb6-09c8-41c3-970e-d31059ca937b",
+    "name": "Apple Pie",
+    "nameLV": "Ābolu kūka",
+    "description": "Classic apple pie with cinnamon filling.",
+    "ingredients": [
+      {
+        "id": "12f0b50f-01d2-4a7a-adf8-759dafbba138",
+        "ingredientName": "apples",
+        "quantity": 5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "d9ba364d-a64a-47a0-bc58-61e9d965d78e",
+        "ingredientName": "flour",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3b63b01e-c587-4a85-a24a-c3ff56d21015",
+        "ingredientName": "butter",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f19d0390-eb38-441b-8ce6-f2629164e43e",
+        "ingredientName": "sugar",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "e5d5d632-1c16-4d05-933c-b9239bafb0c6",
+        "ingredientName": "cinnamon",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ea2ec209-6290-4b4f-9c8d-bda50cf837c7",
+        "ingredientName": "eggs",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Peel and slice apples, toss with sugar and cinnamon.",
+      "Make pastry dough from flour, butter, and egg.",
+      "Line pie pan with half the dough.",
+      "Add apple filling.",
+      "Cover with remaining dough, seal edges.",
+      "Bake at 190C for 45 minutes."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 45,
+    "servings": 8,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 4,
+    "carbsPerServing": 45,
+    "fatsPerServing": 15,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "American",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "pie-pan",
+      "rolling-pin",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "a8d1fa1e-7ec4-4653-95a1-782aca349787",
+    "name": "Caesar Salad",
+    "nameLV": "Cezāra salāti",
+    "description": "Classic Caesar salad with croutons and parmesan.",
+    "ingredients": [
+      {
+        "id": "97e039c9-a6ed-4b87-9055-9b16deb8302f",
+        "ingredientName": "romaine lettuce",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "20cbcd38-a3e5-40a6-a365-703022af34cb",
+        "ingredientName": "chicken breast",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c478be52-e9ce-4ebc-aa90-592f48bdc3c6",
+        "ingredientName": "parmesan",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "6746c165-9ad6-4dce-a5f7-ec85dca7c44c",
+        "ingredientName": "bread",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "279d0dbc-a9ba-465d-b9d4-a365896273bf",
+        "ingredientName": "mayonnaise",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "3de48975-97af-45f0-a3e9-54deaad34fdc",
+        "ingredientName": "garlic",
+        "quantity": 1,
+        "unit": "clove",
+        "isOptional": false
+      },
+      {
+        "id": "896f53ea-ff9c-482b-9759-6f3b5987aa74",
+        "ingredientName": "lemon juice",
+        "quantity": 10,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "03d82c51-e90f-4502-b316-dbeccae3a1ee",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Grill chicken breast, slice into strips.",
+      "Cut bread into cubes, fry until crisp.",
+      "Mix mayonnaise, garlic, lemon juice, and olive oil for dressing.",
+      "Tear lettuce into a bowl, add chicken and croutons.",
+      "Drizzle with dressing, sprinkle parmesan."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 30,
+    "carbsPerServing": 20,
+    "fatsPerServing": 25,
+    "dietaryTags": [],
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "equipment": [
+      "grill",
+      "pan",
+      "knife",
+      "cutting-board",
+      "mixing-bowl"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "72627c0f-e2df-4755-802e-cc70a3041ab9",
+    "name": "Grilled Salmon",
+    "nameLV": "Grilēta lašzivs",
+    "description": "Grilled salmon with lemon butter sauce.",
+    "ingredients": [
+      {
+        "id": "63c2446a-9af4-40e0-920d-a88fd3cea122",
+        "ingredientName": "salmon fillet",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "84db1219-7229-4fab-837b-53e7c8717bd6",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "71dfbe04-7a55-4c44-a976-20bb15f7cf37",
+        "ingredientName": "lemon",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "bf97e040-5f49-4629-b4b7-f526ed7313cd",
+        "ingredientName": "dill",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d82971bc-da64-4a75-b885-5a9ceda367dc",
+        "ingredientName": "salt",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "914bda3d-c935-4909-af26-824da8165bc0",
+        "ingredientName": "black pepper",
+        "quantity": 2,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Season salmon with salt and pepper.",
+      "Grill salmon skin-side down for 4 minutes.",
+      "Flip and grill 3 more minutes.",
+      "Melt butter with lemon juice and dill.",
+      "Pour sauce over salmon and serve."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 35,
+    "carbsPerServing": 2,
+    "fatsPerServing": 25,
+    "dietaryTags": [
+      "gluten-free"
+    ],
+    "cuisine": "Scandinavian",
+    "difficulty": "easy",
+    "equipment": [
+      "grill",
+      "knife"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "0ae22436-7960-40cd-bbb9-cf9264dc6f78",
+    "name": "Cepelinai",
+    "nameLV": "Cepelīni",
+    "description": "Latvian potato dumplings with meat filling.",
+    "ingredients": [
+      {
+        "id": "20aefa8d-c6fd-4a0a-a56a-d1f0e0786c0c",
+        "ingredientName": "potatoes",
+        "quantity": 1000,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8885d966-cb99-4412-9031-bc438c3e7f47",
+        "ingredientName": "ground pork",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "e6e0d220-37ab-4d30-b47d-3e46286d2c8e",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "70b05342-36cf-4bd0-a871-4b1c5ef14c15",
+        "ingredientName": "bacon",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5dad578a-62e1-471f-86ab-c3d919a18791",
+        "ingredientName": "sour cream",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "d7355289-5474-4eb6-a69a-5d557eae974c",
+        "ingredientName": "salt",
+        "quantity": 8,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "74e1a085-7ea6-4daa-a2d1-9a2568c05355",
+        "ingredientName": "egg",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Boil and mash potatoes, mix with raw grated potato.",
+      "Mix ground pork with chopped onion for filling.",
+      "Form dumplings with meat filling inside.",
+      "Boil in salted water for 25 minutes.",
+      "Fry bacon until crisp, serve with sour cream and bacon."
+    ],
+    "prepTimeMinutes": 40,
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 22,
+    "carbsPerServing": 55,
+    "fatsPerServing": 18,
+    "dietaryTags": [],
+    "cuisine": "Latvian",
+    "difficulty": "hard",
+    "equipment": [
+      "pot",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "88c433d1-54bf-4aeb-8a51-318f2b9ef0c5",
+    "name": "Aitu Vārīti",
+    "nameLV": "Aitu vārīti",
+    "description": "Traditional Latvian boiled sheep dish.",
+    "ingredients": [
+      {
+        "id": "5b932193-5977-4bff-bd0c-dbd38256c3cc",
+        "ingredientName": "lamb",
+        "quantity": 800,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "093b15dc-a925-4b1d-8e02-246c92c7ed9e",
+        "ingredientName": "potatoes",
+        "quantity": 6,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "234ed4fd-ae7f-42fb-8bfc-688827603c5f",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "b7feb1a8-5a4b-480d-aa85-15c3b96422db",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5ee945cb-8916-4332-9084-8245ee6bd06c",
+        "ingredientName": "bay leaves",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "1d19135c-edaf-4d5a-8c29-263e24b969a0",
+        "ingredientName": "salt",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a815e3fe-0d52-4a0d-84c5-9383c7484c73",
+        "ingredientName": "black pepper",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Season lamb with salt and pepper.",
+      "Boil lamb with bay leaves for 1 hour.",
+      "Add chopped potatoes and carrots, cook 30 minutes.",
+      "Add onions, cook 15 more minutes.",
+      "Serve with mustard."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 105,
+    "servings": 6,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 35,
+    "carbsPerServing": 30,
+    "fatsPerServing": 15,
+    "dietaryTags": [],
+    "cuisine": "Latvian",
+    "difficulty": "medium",
+    "equipment": [
+      "stockpot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "6937e82f-2b7a-4fe6-98a4-b754ce1fa090",
+    "name": "Rye Crackers",
+    "nameLV": "Rudzu krekeri",
+    "description": "Crispy Latvian rye crackers with salt.",
+    "ingredients": [
+      {
+        "id": "5c139abf-6f3d-4cc0-a5a6-8954d0f35b96",
+        "ingredientName": "rye flour",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "38697555-17bf-40e5-a1c5-492b0e343c63",
+        "ingredientName": "water",
+        "quantity": 150,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "7de56f69-4fc6-492c-970c-00b9d8995ece",
+        "ingredientName": "salt",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4ca0d5ea-f1b4-4b7f-a839-66ee830a8171",
+        "ingredientName": "caraway seeds",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3d47f47f-d75b-458a-8d4c-fb4052191386",
+        "ingredientName": "oil",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix rye flour with water, salt, and oil.",
+      "Knead into a firm dough.",
+      "Roll very thin, cut into squares.",
+      "Poke holes with a fork.",
+      "Bake at 200C for 15 minutes until crisp."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 15,
+    "servings": 6,
+    "caloriesPerServing": 150,
+    "proteinPerServing": 5,
+    "carbsPerServing": 28,
+    "fatsPerServing": 2,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "Latvian",
+    "difficulty": "easy",
+    "equipment": [
+      "oven",
+      "baking-sheet",
+      "rolling-pin"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "c03209f6-2f91-4dfd-aa7f-8c1880f04508",
+    "name": "Latvian Herring Salad",
+    "nameLV": "Silžu salāti",
+    "description": "Classic Latvian herring salad with potatoes.",
+    "ingredients": [
+      {
+        "id": "bdad7a18-7fb7-422c-bc1d-666acc48e9b5",
+        "ingredientName": "pickled herring",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "23ccfb12-8f4c-4ffb-bbab-cd8a7322e566",
+        "ingredientName": "potatoes",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "2cbdfabb-c621-40cb-b6e8-5775648a7844",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "6fc20fbd-4d9d-4a28-9bdb-f80e17b43acf",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "ca653290-fd86-4a82-813a-9b89501ec8e6",
+        "ingredientName": "vegetable oil",
+        "quantity": 40,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "22098b6d-a798-47f0-a06a-8dca3896e7b8",
+        "ingredientName": "salt",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Boil potatoes and carrots until tender, cool and dice.",
+      "Cut herring into pieces, remove bones.",
+      "Finely chop onions.",
+      "Mix all ingredients with oil.",
+      "Season with salt, chill before serving."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 20,
+    "servings": 4,
+    "caloriesPerServing": 280,
+    "proteinPerServing": 15,
+    "carbsPerServing": 25,
+    "fatsPerServing": 14,
+    "dietaryTags": [],
+    "cuisine": "Latvian",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "knife",
+      "cutting-board",
+      "mixing-bowl"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "8b47654a-e236-44e1-9a6d-73fe8c6c1081",
+    "name": "Tacos al Pastor",
+    "nameLV": "Tacos al pastor",
+    "description": "Mexican marinated pork tacos with pineapple.",
+    "ingredients": [
+      {
+        "id": "bd12be08-c12d-4238-9659-079f92ea743c",
+        "ingredientName": "pork shoulder",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5c2c6b64-ed7b-4a7a-8eeb-cef5d5233fde",
+        "ingredientName": "tortillas",
+        "quantity": 8,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "6a52931c-00f1-43bd-b2cd-ac3f0a634426",
+        "ingredientName": "pineapple",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f6f63fab-4b1d-49b5-af82-9c19a09406b6",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "525edab5-e5e1-4f7e-af79-36df1d384806",
+        "ingredientName": "cilantro",
+        "quantity": 20,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5c0c3bbc-326c-43ea-b190-7edcd894d047",
+        "ingredientName": "chili powder",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d3f6273e-b650-4e4f-a205-a219bc91ff3e",
+        "ingredientName": "lime",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "57de9636-218f-44cd-9654-629593d76288",
+        "ingredientName": "cumin",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Marinate pork in chili, cumin, and lime for 2 hours.",
+      "Grill pork until cooked through, slice thin.",
+      "Char tortillas lightly.",
+      "Dice onion and pineapple.",
+      "Assemble tacos with pork, onion, pineapple, and cilantro."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 30,
+    "carbsPerServing": 35,
+    "fatsPerServing": 15,
+    "dietaryTags": [],
+    "cuisine": "Mexican",
+    "difficulty": "medium",
+    "equipment": [
+      "grill",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "bbf9f413-e6ee-4861-9381-38ee8103616e",
+    "name": "Guacamole",
+    "nameLV": "Gakamole",
+    "description": "Classic Mexican avocado dip.",
+    "ingredients": [
+      {
+        "id": "a5e10965-517c-4368-964b-65c0c37bb0b3",
+        "ingredientName": "avocado",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "240f560e-2797-4b28-b174-adb9748f71cb",
+        "ingredientName": "lime",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "70cd889e-9207-452b-b2c8-7c4ab0394542",
+        "ingredientName": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "dafa2927-fbc5-48a8-a866-1a16c49f15dc",
+        "ingredientName": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "b40fe991-fe4a-4560-b68c-ea11d6aadb97",
+        "ingredientName": "cilantro",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2c636913-8546-453d-98e5-1dedf855b030",
+        "ingredientName": "jalapeno",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "3b0850cf-f235-4d11-bff9-25bca7155d18",
+        "ingredientName": "salt",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mash avocados in a bowl.",
+      "Finely chop onion, tomato, cilantro, and jalapeno.",
+      "Mix all ingredients with lime juice.",
+      "Season with salt."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 0,
+    "servings": 4,
+    "caloriesPerServing": 180,
+    "proteinPerServing": 2,
+    "carbsPerServing": 8,
+    "fatsPerServing": 16,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "Mexican",
+    "difficulty": "easy",
+    "equipment": [
+      "mixing-bowl",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "7e01e9f6-d69a-4c58-8d60-d6cbaf6abf5d",
+    "name": "Quesadillas",
+    "nameLV": "Kezasillas",
+    "description": "Cheesy Mexican quesadillas with chicken.",
+    "ingredients": [
+      {
+        "id": "3f8b39c0-fcc9-4046-aeff-d195246b05a4",
+        "ingredientName": "flour tortillas",
+        "quantity": 6,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "22ff21f1-6c42-4fd3-b9e9-cc14bb352a41",
+        "ingredientName": "cheddar cheese",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "6fb60b0d-6b85-450f-a021-17d4576d1230",
+        "ingredientName": "chicken breast",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "319e124b-e326-4c35-bba5-eb96fd035d3f",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "fa42e93b-3e0c-409b-985f-ec5a6c512e41",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "94e7be38-1eb7-4357-928c-a3d502ea391c",
+        "ingredientName": "cumin",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8d8993c8-62a6-40da-981a-054c42157a88",
+        "ingredientName": "butter",
+        "quantity": 20,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook and shred chicken, season with cumin.",
+      "Dice bell pepper and onion.",
+      "Place cheese and fillings on half a tortilla, fold over.",
+      "Fry in butter until golden and cheese melts."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 28,
+    "carbsPerServing": 35,
+    "fatsPerServing": 22,
+    "dietaryTags": [],
+    "cuisine": "Mexican",
+    "difficulty": "easy",
+    "equipment": [
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "76cf696c-d43d-4b44-b1f5-1f9709e8232b",
+    "name": "Chicken Curry",
+    "nameLV": "Vistas kari",
+    "description": "Indian-style chicken curry with coconut milk.",
+    "ingredients": [
+      {
+        "id": "847431af-ef57-4fb8-a115-9eda0635405d",
+        "ingredientName": "chicken breast",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a90a9abc-9b6c-4a9a-b203-90f28a19365b",
+        "ingredientName": "coconut milk",
+        "quantity": 400,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "3cce9f6a-3e6a-47ea-bae8-5cdd58a2f396",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5da13893-6bb4-440b-bfef-d166afada1ba",
+        "ingredientName": "garlic",
+        "quantity": 4,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "739ac265-4e7b-4605-9ad8-181a9b6490fa",
+        "ingredientName": "ginger",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8ffec76a-79ea-43c3-9fad-823ebb9e82de",
+        "ingredientName": "curry powder",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "9e926846-9911-49e9-92ad-d47905f7fff7",
+        "ingredientName": "tomato",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "d33318e9-9204-4121-80a9-db532e6432af",
+        "ingredientName": "rice",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook rice.",
+      "Sauté onion, garlic, and ginger.",
+      "Add curry powder and tomatoes, cook 5 minutes.",
+      "Add chicken and coconut milk, simmer 25 minutes.",
+      "Serve over rice."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "caloriesPerServing": 520,
+    "proteinPerServing": 40,
+    "carbsPerServing": 55,
+    "fatsPerServing": 18,
+    "dietaryTags": [],
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "equipment": [
+      "rice-cooker",
+      "pot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "28c976de-7552-48b4-b86e-20f7c44648da",
+    "name": "Palak Paneer",
+    "nameLV": "Palak paneer",
+    "description": "Indian spinach curry with paneer cheese.",
+    "ingredients": [
+      {
+        "id": "c12c7199-7cf5-404a-bd15-67392d5ec838",
+        "ingredientName": "spinach",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c9166eaa-5f32-4881-a200-c806388b0986",
+        "ingredientName": "paneer",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2e07a321-8850-48b1-8fb9-ee74757f4386",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "17a901f7-ddf7-4dbe-8861-df1d48e1d748",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "92a5542d-8b2a-4281-a73f-29115c45f131",
+        "ingredientName": "garam masala",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d77039ea-63e5-46c1-a3fb-65d2d32ab0d2",
+        "ingredientName": "cream",
+        "quantity": 50,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "7a70412e-38d6-4b15-ac81-695877079569",
+        "ingredientName": "tomato",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Blanch and blend spinach.",
+      "Sauté onion and garlic.",
+      "Add tomatoes and garam masala, cook 5 minutes.",
+      "Add spinach puree and cream, simmer.",
+      "Add cubed paneer, heat through."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 18,
+    "carbsPerServing": 12,
+    "fatsPerServing": 28,
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "equipment": [
+      "pan",
+      "blender",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "3d567b71-472e-4b8e-8413-f57017808a58",
+    "name": "Naan Bread",
+    "nameLV": "Nāna maize",
+    "description": "Soft Indian flatbread.",
+    "ingredients": [
+      {
+        "id": "7b35bda9-e732-4cc7-88e7-6ead180729af",
+        "ingredientName": "flour",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "94f35d13-b6c6-4f24-9f48-54e9b337a162",
+        "ingredientName": "yogurt",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "6be2ace6-1dd3-4ef7-9e67-c4d1f858dddd",
+        "ingredientName": "yeast",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2cd940bf-2deb-4dbe-86dc-9bb1e66dac05",
+        "ingredientName": "sugar",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8f4d72fd-1dc9-449d-a7b6-5033d60085a7",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ae478cdb-553e-41a7-bfe5-f38bcd96cfb3",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix flour, yeast, sugar, and salt.",
+      "Add yogurt and knead dough.",
+      "Let rise for 1 hour.",
+      "Roll into flat circles.",
+      "Bake at 250C for 5 minutes or grill on a hot pan."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 10,
+    "servings": 4,
+    "caloriesPerServing": 220,
+    "proteinPerServing": 7,
+    "carbsPerServing": 38,
+    "fatsPerServing": 5,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "mixing-bowl",
+      "rolling-pin"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "9e909203-563d-4025-bf8e-33c09d3ef697",
+    "name": "Hummus",
+    "nameLV": "Hūmus",
+    "description": "Creamy Middle Eastern chickpea dip.",
+    "ingredients": [
+      {
+        "id": "42451a97-e979-490e-9dd9-278c6b87c2df",
+        "ingredientName": "chickpeas",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2dfc6e7e-04f1-4981-a482-823cd5ecfd5f",
+        "ingredientName": "tahini",
+        "quantity": 60,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "bd31fbef-7faf-4524-9edd-52653b9eaefa",
+        "ingredientName": "lemon juice",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "7dbd65cd-33db-4a35-b070-d9a3b494fd7b",
+        "ingredientName": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "bf8bc36b-8dd5-4f20-940f-fac18b9af18e",
+        "ingredientName": "olive oil",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "ce460794-c2a2-49b2-919e-e7fe80fd1008",
+        "ingredientName": "cumin",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3e146799-ca66-4890-b08b-1a1ab733645c",
+        "ingredientName": "salt",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Blend chickpeas with tahini, lemon juice, and garlic.",
+      "Add olive oil and cumin, blend until smooth.",
+      "Season with salt.",
+      "Serve with pita bread."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 0,
+    "servings": 4,
+    "caloriesPerServing": 250,
+    "proteinPerServing": 8,
+    "carbsPerServing": 20,
+    "fatsPerServing": 16,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "Middle Eastern",
+    "difficulty": "easy",
+    "equipment": [
+      "blender",
+      "mixing-bowl"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "3301a1a8-e419-4036-b3cb-81ecee7208c8",
+    "name": "Falafel",
+    "nameLV": "Falafeli",
+    "description": "Crispy Middle Eastern chickpea fritters.",
+    "ingredients": [
+      {
+        "id": "42a985be-1b8a-4ca5-8abb-70398e761d54",
+        "ingredientName": "chickpeas",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "96750388-f2be-4283-aa22-11aed6c9b5b8",
+        "ingredientName": "parsley",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f3af36ed-7928-4770-9d5c-f972c5345cbf",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "ae54d014-7bed-4877-b473-e67db0844c27",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "086030d7-7a6d-46ae-97a3-3b8ef2ae5b8e",
+        "ingredientName": "cumin",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5a789012-7bb1-4e44-b864-57676e70cff6",
+        "ingredientName": "coriander",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f6a4f001-72b3-48fd-b192-aa1f3492c95f",
+        "ingredientName": "flour",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "7c73da0a-abdb-46f5-b9f7-ddb82c4a037c",
+        "ingredientName": "oil",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Soak chickpeas overnight, drain.",
+      "Blend with parsley, onion, garlic, and spices.",
+      "Add flour, mix well.",
+      "Form into balls.",
+      "Fry in hot oil until golden brown."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 14,
+    "carbsPerServing": 35,
+    "fatsPerServing": 15,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "Middle Eastern",
+    "difficulty": "medium",
+    "equipment": [
+      "blender",
+      "deep-fryer",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "0bb90ae2-3aa5-4bbd-91b1-40fb598545bb",
+    "name": "Shakshuka",
+    "nameLV": "Šakshuka",
+    "description": "North African eggs poached in tomato sauce.",
+    "ingredients": [
+      {
+        "id": "aee6a71a-01fb-4eb8-a07b-380c835f2346",
+        "ingredientName": "eggs",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "c3211f48-5418-421a-9082-8857601aee0f",
+        "ingredientName": "tomatoes",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "99e9c190-5e46-4f67-bb16-18d776cf7c01",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "c742e80b-ca57-4b4b-882d-b46f64519ebe",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "266fb0de-e020-4eca-be23-a94f83199d82",
+        "ingredientName": "cumin",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c15f91c2-7dc7-4682-afa9-544108e5689b",
+        "ingredientName": "paprika",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b11d7823-553b-458a-9a85-e4f8b487ae90",
+        "ingredientName": "feta cheese",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ab2d72d2-76d0-48c6-be26-f69fe75398b7",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sauté onion and bell pepper in olive oil.",
+      "Add tomatoes, cumin, and paprika, simmer 15 minutes.",
+      "Make wells in the sauce, crack eggs into them.",
+      "Cover and cook until eggs are set.",
+      "Top with feta."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 18,
+    "carbsPerServing": 15,
+    "fatsPerServing": 20,
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "cuisine": "Middle Eastern",
+    "difficulty": "easy",
+    "equipment": [
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "f3182ebe-e515-4630-bddb-d1a601685b55",
+    "name": "Jollof Rice",
+    "nameLV": "Džolofa rīsi",
+    "description": "West African one-pot tomato rice.",
+    "ingredients": [
+      {
+        "id": "200de9c8-b102-4be4-a959-68ca99337dd2",
+        "ingredientName": "rice",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d2f4cd16-50e0-4103-af11-b0987a51b532",
+        "ingredientName": "tomatoes",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "497e3796-f24e-447e-aeb7-2c3e3216d857",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "476feeca-63d9-4b14-a4eb-f3386cc5c6ed",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "a52f2aff-a5ea-4d2e-8344-b85ba55cb79d",
+        "ingredientName": "scotch bonnet",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "1bd15651-1651-4a77-8814-cad013fef153",
+        "ingredientName": "thyme",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ddd752ce-fd2b-45d9-8234-bbca2f6a7762",
+        "ingredientName": "bay leaves",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f9345046-7bb5-4d9c-85e1-c98aa1092c70",
+        "ingredientName": "chicken broth",
+        "quantity": 500,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Blend tomatoes, onion, pepper, and scotch bonnet.",
+      "Sauté the blend in a pot for 10 minutes.",
+      "Add rice, broth, thyme, and bay leaves.",
+      "Cover and simmer for 25 minutes until rice is tender."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 8,
+    "carbsPerServing": 80,
+    "fatsPerServing": 6,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "African",
+    "difficulty": "medium",
+    "equipment": [
+      "pot",
+      "blender",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "cc97e129-87dc-484b-8c49-7e8a580d7986",
+    "name": "Tagine",
+    "nameLV": "Tažīns",
+    "description": "Moroccan slow-cooked lamb tagine.",
+    "ingredients": [
+      {
+        "id": "e03ed31a-5804-4c27-ab34-d9517daa2606",
+        "ingredientName": "lamb",
+        "quantity": 600,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f7ed43e4-871c-4a29-9b05-e6a2861b0b3d",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "4793cb0d-6532-49fa-87cc-a6830035a156",
+        "ingredientName": "apricots",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "27e86544-c64c-45da-bd37-6eb8e7ee0c5e",
+        "ingredientName": "almonds",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2181bbf5-6752-4ceb-818d-9e67259e2f24",
+        "ingredientName": "cinnamon",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3f524ea7-3e08-4f27-9ee2-d0631a10688d",
+        "ingredientName": "ginger",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "cf3086ae-9da5-45f3-b85f-73a211195684",
+        "ingredientName": "honey",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "265aa3e8-1b8d-4ac6-8cd8-f79244d4b689",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sear lamb in olive oil.",
+      "Add chopped onions, cinnamon, and ginger.",
+      "Add apricots and enough water to cover.",
+      "Simmer covered for 1.5 hours until tender.",
+      "Toast almonds, serve over tagine."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 95,
+    "servings": 4,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 35,
+    "carbsPerServing": 25,
+    "fatsPerServing": 25,
+    "dietaryTags": [
+      "gluten-free"
+    ],
+    "cuisine": "African",
+    "difficulty": "medium",
+    "equipment": [
+      "tagine",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "50bb5688-b564-4af7-86ff-42dc4bfd7fa4",
+    "name": "Coq au Vin",
+    "nameLV": "Coq au vin",
+    "description": "Classic French chicken braised in red wine.",
+    "ingredients": [
+      {
+        "id": "9bdc0ff6-18d8-4f1a-b6cf-b4d0e0842ad4",
+        "ingredientName": "chicken",
+        "quantity": 800,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "cc4d7877-a55e-4fe1-9153-1ad6ef93ba81",
+        "ingredientName": "red wine",
+        "quantity": 500,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "c51c1fd7-eda2-479c-a558-b0c443e37853",
+        "ingredientName": "mushrooms",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4d61bc3b-d8cc-4815-8bed-1976d5fc321d",
+        "ingredientName": "bacon",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "05b8a51f-5680-4c76-b4af-4c6594b34e29",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "e4e713ae-0645-4759-83e3-1ae6fa4f8494",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f70c72fb-ac73-4ab5-b7a8-50727c9868ac",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "b1b403c4-47ad-4523-a7cb-ced93221bbba",
+        "ingredientName": "beef broth",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sear chicken pieces and bacon.",
+      "Add onions, carrots, and garlic.",
+      "Pour in red wine and beef broth.",
+      "Add mushrooms.",
+      "Simmer covered for 1.5 hours until chicken is tender."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 95,
+    "servings": 4,
+    "caloriesPerServing": 520,
+    "proteinPerServing": 42,
+    "carbsPerServing": 15,
+    "fatsPerServing": 28,
+    "dietaryTags": [],
+    "cuisine": "French",
+    "difficulty": "hard",
+    "equipment": [
+      "dutch-oven",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "207f6303-7f0d-4ad1-b6de-a0b245201840",
+    "name": "Ratatouille",
+    "nameLV": "Ratatuj",
+    "description": "Provençal vegetable stew.",
+    "ingredients": [
+      {
+        "id": "09f8e71a-29cf-42e4-89ac-952932358be5",
+        "ingredientName": "zucchini",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "4ed41a4f-8146-4924-a7bb-32614dd8e4a4",
+        "ingredientName": "eggplant",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "791ca4cf-4a36-41f4-b9a1-0ee817d90409",
+        "ingredientName": "bell pepper",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "09e4cd84-4dad-493b-b603-6915323c30d6",
+        "ingredientName": "tomatoes",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "963ed378-9514-4d64-becd-d641c0223bcc",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "d3bbdbcd-366a-4ddd-9aa3-1efe2f565f57",
+        "ingredientName": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "c82bda5f-69a4-41bf-a7c3-15256f6be517",
+        "ingredientName": "olive oil",
+        "quantity": 40,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "afaae01f-4fff-4dbe-8932-f762b465b917",
+        "ingredientName": "herbs de provence",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Dice all vegetables.",
+      "Sauté onion and garlic in olive oil.",
+      "Add vegetables in order: eggplant, zucchini, pepper, tomatoes.",
+      "Add herbs, simmer for 45 minutes."
+    ],
+    "prepTimeMinutes": 25,
+    "cookTimeMinutes": 45,
+    "servings": 4,
+    "caloriesPerServing": 180,
+    "proteinPerServing": 5,
+    "carbsPerServing": 22,
+    "fatsPerServing": 8,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "French",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "8b780051-64b5-49df-ab8e-acbd534738a1",
+    "name": "Croissants",
+    "nameLV": "Kruasani",
+    "description": "Buttery French croissants.",
+    "ingredients": [
+      {
+        "id": "23d1c691-7dda-4682-b286-5aa2ed949d02",
+        "ingredientName": "flour",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "676fa764-f39f-4cc2-96df-e738168d63cb",
+        "ingredientName": "butter",
+        "quantity": 250,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a1aaef71-14c8-4453-8087-169ff41cfcab",
+        "ingredientName": "milk",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "3006cc92-2077-4254-9cb6-4500cf5dbb48",
+        "ingredientName": "yeast",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a30f1dad-603b-4d4f-8056-4f499b4737c1",
+        "ingredientName": "sugar",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "c099754b-3a53-4a84-9e72-d4d1cd325950",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix flour, yeast, milk, sugar, and salt into dough.",
+      "Knead and let rest 30 minutes.",
+      "Roll out, spread butter, fold in thirds.",
+      "Repeat folding 3 times, chilling between.",
+      "Shape into croissants, let rise 1 hour.",
+      "Bake at 200C for 15 minutes."
+    ],
+    "prepTimeMinutes": 60,
+    "cookTimeMinutes": 20,
+    "servings": 8,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 6,
+    "carbsPerServing": 38,
+    "fatsPerServing": 16,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "French",
+    "difficulty": "hard",
+    "equipment": [
+      "oven",
+      "mixing-bowl",
+      "rolling-pin"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "db372ab3-7cf7-41c2-b96c-fe86e295b3c0",
+    "name": "Paella",
+    "nameLV": "Paelja",
+    "description": "Spanish saffron rice with chicken and seafood.",
+    "ingredients": [
+      {
+        "id": "7546b96f-335d-4a90-b24a-a7ec01fea608",
+        "ingredientName": "rice",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "526a31c4-587f-4d56-8d1f-c564d0ffe388",
+        "ingredientName": "chicken",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "e3ef2170-b370-4a95-9b6a-443eab23237a",
+        "ingredientName": "shrimp",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b1e205c6-f88b-4322-b470-4c8ad57de8a5",
+        "ingredientName": "saffron",
+        "quantity": 1,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5228dc4a-c4ba-460d-b105-dd99956985d5",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "e3b64ced-1831-45e1-8767-81c5c2e9e535",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "e6eb62fa-3a59-448c-bdbf-643467b8ab56",
+        "ingredientName": "chicken broth",
+        "quantity": 700,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "cee394b5-1f90-46ee-84e9-adf8ec7a004f",
+        "ingredientName": "olive oil",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sear chicken in olive oil.",
+      "Add onion and bell pepper, cook 5 minutes.",
+      "Add rice and saffron, stir 2 minutes.",
+      "Pour in broth, do not stir.",
+      "Add shrimp on top.",
+      "Cook 20 minutes until rice is tender."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "caloriesPerServing": 480,
+    "proteinPerServing": 35,
+    "carbsPerServing": 55,
+    "fatsPerServing": 12,
+    "dietaryTags": [],
+    "cuisine": "Spanish",
+    "difficulty": "medium",
+    "equipment": [
+      "paella-pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "7d27860c-a26b-4759-a3ed-f091d14f3640",
+    "name": "Gazpacho",
+    "nameLV": "Gazpacho",
+    "description": "Cold Spanish tomato soup.",
+    "ingredients": [
+      {
+        "id": "b3204944-db0f-4378-8236-a0590af5aec9",
+        "ingredientName": "tomatoes",
+        "quantity": 6,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "148130d9-e8b6-43b4-8a92-681c4cc1cd6c",
+        "ingredientName": "cucumber",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "1e0bf6aa-7220-4c6f-a28f-236522725c4a",
+        "ingredientName": "bell pepper",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "0da79c96-6fb4-401e-8a9a-5c4293984f7e",
+        "ingredientName": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "498760a1-a19d-476b-8efb-931eb2284bfa",
+        "ingredientName": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "cc302f2d-a031-4086-bdf0-ab1537842a29",
+        "ingredientName": "olive oil",
+        "quantity": 40,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "1a54adfa-7a95-4587-8751-8bbcfd4422e5",
+        "ingredientName": "vinegar",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "2cdbe0a1-23a0-4325-b975-c81a6f359128",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Blend all ingredients until smooth.",
+      "Chill for 2 hours.",
+      "Serve cold with croutons."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 0,
+    "servings": 4,
+    "caloriesPerServing": 120,
+    "proteinPerServing": 3,
+    "carbsPerServing": 12,
+    "fatsPerServing": 7,
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "cuisine": "Spanish",
+    "difficulty": "easy",
+    "equipment": [
+      "blender"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "e48f8577-7fbd-485b-8992-51689d656a34",
+    "name": "Sauerbraten",
+    "nameLV": "Zauerbratens",
+    "description": "German pot roast marinated in wine vinegar.",
+    "ingredients": [
+      {
+        "id": "3c6e28ba-74be-411c-a269-4bbe0a4eba51",
+        "ingredientName": "beef",
+        "quantity": 800,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "367893d2-cacd-4232-908a-b7715686ac95",
+        "ingredientName": "red wine",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "6a550046-9b38-4a31-95dc-0a1a16559088",
+        "ingredientName": "vinegar",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "757bc09c-4d9a-4b1f-83be-94589966d4ab",
+        "ingredientName": "onion",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "8ce995b7-9f72-450f-b3ed-14d89f931cac",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "76bea886-59f2-4d5f-ba50-694f1fe3e7fa",
+        "ingredientName": "bay leaves",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "ee83ae74-39ba-465d-ad7f-34fa8fba73b3",
+        "ingredientName": "mustard",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8e62a807-045b-4d69-8206-595060013567",
+        "ingredientName": "beef broth",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Marinate beef in wine, vinegar, and spices for 2 days.",
+      "Remove beef, drain marinade.",
+      "Brown beef in a pot.",
+      "Add vegetables and marinade, simmer 2.5 hours.",
+      "Thicken sauce with mustard."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 155,
+    "servings": 4,
+    "caloriesPerServing": 550,
+    "proteinPerServing": 45,
+    "carbsPerServing": 15,
+    "fatsPerServing": 32,
+    "dietaryTags": [],
+    "cuisine": "German",
+    "difficulty": "hard",
+    "equipment": [
+      "dutch-oven",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "be1da765-f3d0-4a41-997c-699bc666bc8d",
+    "name": "Pork Schnitzel",
+    "nameLV": "Cūkgaļas šnicelis",
+    "description": "Crispy breaded pork cutlet.",
+    "ingredients": [
+      {
+        "id": "3c8fca6e-f5e8-42ac-99d2-2b3600931a66",
+        "ingredientName": "pork tenderloin",
+        "quantity": 400,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "cb1f1bdd-798a-4c34-b447-c1fb06da1a7e",
+        "ingredientName": "flour",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "08c4b48f-0a89-4d77-b0c3-6fddd016528c",
+        "ingredientName": "eggs",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "82656f08-1b36-4eb6-b84d-bd71040087a6",
+        "ingredientName": "bread crumbs",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ea3e6c96-1ecb-4de7-9092-d664aab1ebf7",
+        "ingredientName": "butter",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "748529c2-d739-4613-8ac9-14c90cdc4869",
+        "ingredientName": "lemon",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "18addda9-082d-4443-b595-a67926d79e9a",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "08fc74c5-5d2b-4aae-81d1-5862b3d14253",
+        "ingredientName": "black pepper",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Pound pork thin, season with salt and pepper.",
+      "Dredge in flour, dip in beaten eggs, coat with breadcrumbs.",
+      "Fry in butter until golden on both sides.",
+      "Serve with lemon wedges."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "caloriesPerServing": 480,
+    "proteinPerServing": 35,
+    "carbsPerServing": 25,
+    "fatsPerServing": 28,
+    "dietaryTags": [],
+    "cuisine": "German",
+    "difficulty": "easy",
+    "equipment": [
+      "pan",
+      "mixing-bowl",
+      "knife"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "318ddd02-7729-4f79-a574-625cc53c23e1",
+    "name": "German Potato Salad",
+    "nameLV": "Vācu kartupeļu salāti",
+    "description": "Warm German potato salad with bacon.",
+    "ingredients": [
+      {
+        "id": "e28306dd-111e-4a5c-a97f-281c2b9c57bf",
+        "ingredientName": "potatoes",
+        "quantity": 600,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "63f0d0fc-9d9a-459a-9966-e026bf06d402",
+        "ingredientName": "bacon",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a4c7ecb8-73db-489e-b743-5c7a35e52aba",
+        "ingredientName": "onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f5e17c20-ff45-4819-a758-782b9c9bfcc4",
+        "ingredientName": "vinegar",
+        "quantity": 40,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "be4c2724-a27c-49b9-8f7c-31ee808bc038",
+        "ingredientName": "oil",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "95d1663b-6af7-40f9-a98a-553278325edd",
+        "ingredientName": "mustard",
+        "quantity": 15,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "e280613c-f0fb-4cb5-b30b-0bf538d7d142",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4edb5dad-3730-4577-b27e-1c0469c5d3cb",
+        "ingredientName": "pepper",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Boil potatoes until tender, slice.",
+      "Fry bacon until crisp.",
+      "Caramelize onions in bacon fat.",
+      "Mix vinegar, oil, and mustard for dressing.",
+      "Toss warm potatoes with bacon, onions, and dressing."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 12,
+    "carbsPerServing": 35,
+    "fatsPerServing": 15,
+    "dietaryTags": [],
+    "cuisine": "German",
+    "difficulty": "medium",
+    "equipment": [
+      "pot",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "892847ec-6a0a-473d-8eb9-0131a22589da",
+    "name": "Lasagna",
+    "nameLV": "Lasagna",
+    "description": "Classic Italian layered pasta bake.",
+    "ingredients": [
+      {
+        "id": "87bed640-e80c-404e-ab2b-97c7a7fbb197",
+        "ingredientName": "lasagna sheets",
+        "quantity": 250,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "3889fe71-f379-4428-bffe-5178c48f33c8",
+        "ingredientName": "ground beef",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "651508f3-20f8-43e7-931f-bbc3ebe71562",
+        "ingredientName": "tomato sauce",
+        "quantity": 500,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "5a63402b-62de-4324-b0a3-359f69660b22",
+        "ingredientName": "ricotta",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "0f870150-424a-45f5-bfdc-3d978a50c49d",
+        "ingredientName": "mozzarella",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "542de69c-23e4-4d30-b1c8-32ca3e3b7c2a",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "8baf25e9-7045-4117-a32d-8936b36dd8ec",
+        "ingredientName": "parmesan",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "92292076-58d8-44ba-bc3e-247ee6fe1a2c",
+        "ingredientName": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Brown ground beef with onion, add tomato sauce, simmer 20 minutes.",
+      "Mix ricotta with egg and parmesan.",
+      "Layer: sauce, pasta, ricotta, cheese. Repeat.",
+      "Bake at 180C for 40 minutes."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 45,
+    "servings": 6,
+    "caloriesPerServing": 520,
+    "proteinPerServing": 35,
+    "carbsPerServing": 45,
+    "fatsPerServing": 25,
+    "dietaryTags": [],
+    "cuisine": "Italian",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "glass-baking-dish",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "b12b770f-6545-4aae-8c4b-dc041d1cc7c1",
+    "name": "Margherita Pizza",
+    "nameLV": "Marģeritas pica",
+    "description": "Classic Neapolitan pizza.",
+    "ingredients": [
+      {
+        "id": "4ed6f4a9-2c35-48b4-a001-d26e90e41e8d",
+        "ingredientName": "pizza dough",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "6b4dd37d-e6f5-4a6c-97b9-342ce1a774de",
+        "ingredientName": "tomato sauce",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "43dfe6ab-c551-4f62-b71a-945338c4380b",
+        "ingredientName": "mozzarella",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "40f79aa6-41cf-4558-b7d5-482c1cd4c140",
+        "ingredientName": "basil",
+        "quantity": 10,
+        "unit": "leaves",
+        "isOptional": false
+      },
+      {
+        "id": "3d0d0490-d53f-45fa-ac0a-9f0c73fb0a1e",
+        "ingredientName": "olive oil",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Preheat oven to 250C.",
+      "Stretch dough into a circle.",
+      "Spread tomato sauce, add mozzarella.",
+      "Bake for 10-12 minutes until crust is golden.",
+      "Top with basil and olive oil."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 12,
+    "servings": 1,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 15,
+    "carbsPerServing": 45,
+    "fatsPerServing": 14,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "equipment": [
+      "oven",
+      "pizza-stone",
+      "rolling-pin"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "1651592b-77eb-4dc6-9b88-fd1d94272bd6",
+    "name": "Risotto",
+    "nameLV": "Risoto",
+    "description": "Creamy Italian mushroom risotto.",
+    "ingredients": [
+      {
+        "id": "3651943e-013d-413f-83d0-9d0b94339bb5",
+        "ingredientName": "arborio rice",
+        "quantity": 250,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5b11988e-dca4-494c-9be3-e3799644975c",
+        "ingredientName": "mushrooms",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "69efc066-ac02-4511-848f-1430d7d915fe",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "e42e6cbd-a1d2-415f-8b68-c0f0f3f22062",
+        "ingredientName": "white wine",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "79cffd4b-5102-402f-90bb-6df0cfaff7e6",
+        "ingredientName": "chicken broth",
+        "quantity": 700,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "85bfd9df-94e5-49cf-8083-27fa42b1e6bc",
+        "ingredientName": "parmesan",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "79de48c9-8b59-45e9-8122-563316e81a6e",
+        "ingredientName": "butter",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "f1f69b99-445a-4f69-bcb7-2794a1e1a685",
+        "ingredientName": "olive oil",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sauté onion and mushrooms in olive oil.",
+      "Add rice, toast for 2 minutes.",
+      "Pour in white wine, stir until absorbed.",
+      "Add broth one ladle at a time, stirring constantly.",
+      "When rice is creamy, stir in butter and parmesan."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 30,
+    "servings": 3,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 12,
+    "carbsPerServing": 60,
+    "fatsPerServing": 12,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Italian",
+    "difficulty": "medium",
+    "equipment": [
+      "saucepan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "55c728b2-3067-4559-b997-b15fc5b7393e",
+    "name": "Sushi Rolls",
+    "nameLV": "Suši rullīši",
+    "description": "Japanese maki sushi rolls.",
+    "ingredients": [
+      {
+        "id": "973ad398-6f8a-47f1-916c-4f7074be93de",
+        "ingredientName": "sushi rice",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "9eb5f130-154e-4146-b081-b28364b40545",
+        "ingredientName": "nori sheets",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "f071195b-1df4-4873-aa2c-487bc6d9541c",
+        "ingredientName": "salmon",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "898b68d5-56a4-45fc-9441-046333e68c3c",
+        "ingredientName": "cucumber",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "458e6103-51c3-47f2-a511-fcc7eedd9b5f",
+        "ingredientName": "avocado",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "544858b8-b1ac-464d-8c87-d1af558916a0",
+        "ingredientName": "soy sauce",
+        "quantity": 50,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "ecf7a1ef-bddd-401b-afef-6de94449ddc4",
+        "ingredientName": "wasabi",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook sushi rice, season with vinegar.",
+      "Place nori on a bamboo mat, spread rice thinly.",
+      "Place salmon and cucumber in center, roll tightly.",
+      "Cut into 6 pieces with a wet knife.",
+      "Serve with soy sauce and wasabi."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "caloriesPerServing": 320,
+    "proteinPerServing": 12,
+    "carbsPerServing": 55,
+    "fatsPerServing": 6,
+    "dietaryTags": [],
+    "cuisine": "Japanese",
+    "difficulty": "medium",
+    "equipment": [
+      "knife",
+      "bamboo-steamer"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "fa60cd18-9672-4304-b65c-c8a98f54c6ca",
+    "name": "Kimchi Fried Rice",
+    "nameLV": "Kimči rīsu vārījums",
+    "description": "Korean-style fried rice with kimchi.",
+    "ingredients": [
+      {
+        "id": "99fcba44-7683-4423-9052-1419f5a1847f",
+        "ingredientName": "cooked rice",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "94643e6b-d60d-44a9-8e46-e16cf1c975e2",
+        "ingredientName": "kimchi",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "b1240f2e-465d-4b62-a1cd-84836de16526",
+        "ingredientName": "eggs",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5bb23113-7406-4a39-a811-5d7c53a0c42b",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "50309465-5da0-42ec-9fb4-4cda9da26ab3",
+        "ingredientName": "soy sauce",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "8332d146-5bce-4d47-8f76-0ddb83b1606f",
+        "ingredientName": "sesame oil",
+        "quantity": 10,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "df9da16a-ecb3-43c6-9d6f-d09e36d703b2",
+        "ingredientName": "green onion",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Scramble eggs in a wok, set aside.",
+      "Sauté onion and kimchi.",
+      "Add rice and soy sauce, stir fry 5 minutes.",
+      "Add eggs back, finish with sesame oil and green onion."
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 14,
+    "carbsPerServing": 55,
+    "fatsPerServing": 10,
+    "dietaryTags": [],
+    "cuisine": "Korean",
+    "difficulty": "easy",
+    "equipment": [
+      "wok",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "f8655944-40ed-4f2b-bff1-02d97b5982f4",
+    "name": "Pho",
+    "nameLV": "Fo",
+    "description": "Vietnamese beef noodle soup.",
+    "ingredients": [
+      {
+        "id": "a5fd272b-9642-4907-b359-f8ee121772d4",
+        "ingredientName": "beef bones",
+        "quantity": 500,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "0964fbf7-aec9-4fd0-aa48-95c7971b7c1c",
+        "ingredientName": "rice noodles",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "88a2a500-c14c-4c6c-bd98-4ff12324256b",
+        "ingredientName": "beef slices",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "cc927ac8-7812-47cf-825c-2dfd867d438a",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "cd5e2d0e-a797-4f34-95b3-05e92bfd821f",
+        "ingredientName": "star anise",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5df329bd-0bf7-4b1a-ac7a-bd4af10f5275",
+        "ingredientName": "cinnamon",
+        "quantity": 1,
+        "unit": "stick",
+        "isOptional": false
+      },
+      {
+        "id": "2cfa3437-355d-46af-8149-ab6d6c1bfeb5",
+        "ingredientName": "fish sauce",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "34630bfd-1b2c-4158-8bb0-d7aefa699fd2",
+        "ingredientName": "herbs",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Roast onion, simmer with beef bones and spices for 3 hours.",
+      "Strain broth, season with fish sauce.",
+      "Cook rice noodles.",
+      "Place noodles in bowl, add raw beef slices.",
+      "Pour hot broth over, top with herbs."
+    ],
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 185,
+    "servings": 3,
+    "caloriesPerServing": 420,
+    "proteinPerServing": 35,
+    "carbsPerServing": 55,
+    "fatsPerServing": 8,
+    "dietaryTags": [],
+    "cuisine": "Vietnamese",
+    "difficulty": "hard",
+    "equipment": [
+      "stockpot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "5a2291ef-f060-42c1-be61-2ee45858fd09",
+    "name": "BBQ Ribs",
+    "nameLV": "BBJ ribiņas",
+    "description": "American-style barbecue pork ribs.",
+    "ingredients": [
+      {
+        "id": "1e81783e-7f4e-4800-855a-2a2bf5f6fdbc",
+        "ingredientName": "pork ribs",
+        "quantity": 1000,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "324662ed-8f06-4eb5-ba55-6cb73fcff28e",
+        "ingredientName": "bbq sauce",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "650677f1-4027-4ac1-83ca-352e595a069d",
+        "ingredientName": "brown sugar",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "90dfc948-e511-47bb-8cd0-585b81b8404d",
+        "ingredientName": "paprika",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "664788d6-c956-4a33-ac8f-b13abc03471c",
+        "ingredientName": "garlic powder",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "08a305ca-0d7f-482a-9ab8-294855a6287d",
+        "ingredientName": "salt",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "33fadd0c-34c8-43eb-8cd6-14957605ee3f",
+        "ingredientName": "black pepper",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Mix brown sugar, paprika, garlic powder, salt, and pepper.",
+      "Coat ribs with dry rub, marinate overnight.",
+      "Wrap in foil, bake at 150C for 2 hours.",
+      "Unwrap, brush with BBQ sauce, grill 10 minutes."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 130,
+    "servings": 4,
+    "caloriesPerServing": 580,
+    "proteinPerServing": 40,
+    "carbsPerServing": 35,
+    "fatsPerServing": 30,
+    "dietaryTags": [],
+    "cuisine": "American",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "grill",
+      "aluminum-foil"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "ce1a4216-a839-4298-9280-498475d8626b",
+    "name": "Cheeseburger",
+    "nameLV": "Siera burgeris",
+    "description": "Classic American cheeseburger.",
+    "ingredients": [
+      {
+        "id": "e7ac1cf7-07ef-4554-8729-eae1080fe67c",
+        "ingredientName": "ground beef",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "110ab97c-cbff-463f-985e-c81b20e25fff",
+        "ingredientName": "burger buns",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "3b272a35-976c-4835-8c13-bee6c032fe1d",
+        "ingredientName": "cheddar cheese",
+        "quantity": 60,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "492f946e-ea95-46d6-ba6a-b28635808c83",
+        "ingredientName": "lettuce",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "8b5645e8-6146-4ec6-9260-0f6bfccb2ac6",
+        "ingredientName": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "02b9a6d9-f36c-4399-9b54-6ba0cd22cce6",
+        "ingredientName": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "906b9220-6af2-4582-b924-ef79f22e56e3",
+        "ingredientName": "ketchup",
+        "quantity": 30,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "a95a1000-608a-4b75-8650-f85d04fe17a0",
+        "ingredientName": "mustard",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Form beef into patties, season with salt and pepper.",
+      "Grill patties for 3-4 minutes per side.",
+      "Add cheese in last minute to melt.",
+      "Toast buns, assemble with lettuce, tomato, onion, and sauces."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "caloriesPerServing": 550,
+    "proteinPerServing": 30,
+    "carbsPerServing": 40,
+    "fatsPerServing": 28,
+    "dietaryTags": [],
+    "cuisine": "American",
+    "difficulty": "easy",
+    "equipment": [
+      "grill",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "2a9a7dd2-1976-42c0-914e-075a88cdeb87",
+    "name": "Mac and Cheese",
+    "nameLV": "Makaroni ar sieru",
+    "description": "Creamy American macaroni and cheese.",
+    "ingredients": [
+      {
+        "id": "b16acf2e-167d-461e-b407-ef945588c6ef",
+        "ingredientName": "macaroni",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "d42f7ab4-5882-4ad5-aaa8-7cab1628c319",
+        "ingredientName": "cheddar cheese",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "6976cd22-7b4a-4e5e-b1fb-00ce800bd8b8",
+        "ingredientName": "milk",
+        "quantity": 300,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "efc8ad48-40aa-40ac-bcb5-46e21cd45f01",
+        "ingredientName": "butter",
+        "quantity": 40,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "e66d02ce-db51-429a-a495-5020521d726c",
+        "ingredientName": "flour",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "0055db08-7e40-4ebf-bf29-aae79558b3b0",
+        "ingredientName": "mustard",
+        "quantity": 10,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "0a2d4ae3-0656-4ec9-8e8d-b2a7f3038c02",
+        "ingredientName": "bread crumbs",
+        "quantity": 50,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook macaroni until al dente.",
+      "Make a roux with butter and flour.",
+      "Add milk, cook until thickened.",
+      "Stir in cheese and mustard.",
+      "Mix with pasta, top with breadcrumbs, bake at 180C for 15 minutes."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "caloriesPerServing": 520,
+    "proteinPerServing": 22,
+    "carbsPerServing": 55,
+    "fatsPerServing": 22,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "American",
+    "difficulty": "easy",
+    "equipment": [
+      "oven",
+      "pot",
+      "saucepan",
+      "glass-baking-dish"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "66bee968-127e-4ce8-9a52-3f6ee718e494",
+    "name": "Zucchini Noodles",
+    "nameLV": "Cukīni makaroni",
+    "description": "Low-carb zucchini noodles with pesto.",
+    "ingredients": [
+      {
+        "id": "10f17ff8-9e3e-4c8d-aa2c-861570cc24ec",
+        "ingredientName": "zucchini",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "84f12444-6993-4397-809b-886526dd3039",
+        "ingredientName": "basil pesto",
+        "quantity": 100,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "73349bc6-1fc6-4e79-8c30-bfa8e495067f",
+        "ingredientName": "cherry tomatoes",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "12ff73d4-8694-4072-889e-10848d59301f",
+        "ingredientName": "parmesan",
+        "quantity": 30,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "5fe29f71-6487-43c9-bcba-cfc7d74ede27",
+        "ingredientName": "olive oil",
+        "quantity": 15,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "0ea1d439-04e1-4a63-bece-097cea4f540c",
+        "ingredientName": "salt",
+        "quantity": 2,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Spiralize zucchini into noodles.",
+      "Sauté zucchini noodles for 2 minutes.",
+      "Toss with pesto and halved cherry tomatoes.",
+      "Top with parmesan."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 5,
+    "servings": 2,
+    "caloriesPerServing": 220,
+    "proteinPerServing": 8,
+    "carbsPerServing": 10,
+    "fatsPerServing": 18,
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "low-carb"
+    ],
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "equipment": [
+      "spiralizer",
+      "pan",
+      "knife"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "1c09081b-00f6-4bfa-97cf-a9f5370e5e8f",
+    "name": "Stuffed Bell Peppers",
+    "nameLV": "Pildīti papriku",
+    "description": "Low-carb bell peppers stuffed with ground meat.",
+    "ingredients": [
+      {
+        "id": "c6529880-206e-42df-a664-18d1f40c015f",
+        "ingredientName": "bell peppers",
+        "quantity": 4,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "8d2137e9-c484-4fd7-896e-faf9c0ed5bcc",
+        "ingredientName": "ground beef",
+        "quantity": 400,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4dfffcdf-043a-4ef3-a140-9aa595a110a5",
+        "ingredientName": "rice",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "dfaf4925-71eb-4e96-ac48-aa1e90ffaadb",
+        "ingredientName": "tomato sauce",
+        "quantity": 200,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "ad582692-ec98-4ddf-9afd-e06affd3e2bf",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "2be2a08f-785c-466c-9dee-ca4ff24f6583",
+        "ingredientName": "cheese",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "ef4411ef-52ae-4ba3-aca8-7904aac0483d",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "14c1dc4b-7f15-4c03-b7b9-e10ea69f9498",
+        "ingredientName": "pepper",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook rice.",
+      "Brown ground beef with onion.",
+      "Mix beef with rice and half the cheese.",
+      "Fill peppers with mixture, top with tomato sauce and cheese.",
+      "Bake at 180C for 35 minutes."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "caloriesPerServing": 380,
+    "proteinPerServing": 28,
+    "carbsPerServing": 30,
+    "fatsPerServing": 15,
+    "dietaryTags": [
+      "gluten-free"
+    ],
+    "cuisine": "Mediterranean",
+    "difficulty": "medium",
+    "equipment": [
+      "oven",
+      "baking-dish",
+      "pan",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "931711c0-339f-4972-b904-194f868c9879",
+    "name": "Salmon Avocado Bowl",
+    "nameLV": "Laša avokado bļoda",
+    "description": "Healthy bowl with grilled salmon and avocado.",
+    "ingredients": [
+      {
+        "id": "ab21be2d-35c8-4863-a871-6176cccd6000",
+        "ingredientName": "salmon fillet",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "532303b5-0913-4f9b-a30e-cb6a85ff4cfb",
+        "ingredientName": "avocado",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "5b3c79f6-abed-4fa3-aaf5-44eabcaf611e",
+        "ingredientName": "rice",
+        "quantity": 150,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "05f8b4e7-6fd7-4570-ac74-fae302acaa94",
+        "ingredientName": "cucumber",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "92db2b4d-3690-4ebd-a131-7204d95f4ebc",
+        "ingredientName": "soy sauce",
+        "quantity": 20,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "2314d6bb-817e-4fb9-aeae-eb8028f8bd0b",
+        "ingredientName": "sesame seeds",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "a37756f3-3742-4832-9019-037a72be31f0",
+        "ingredientName": "lime",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Cook rice.",
+      "Grill salmon until cooked through.",
+      "Slice avocado and cucumber.",
+      "Assemble bowl: rice, salmon, avocado, cucumber.",
+      "Drizzle with soy sauce, sprinkle sesame seeds."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "servings": 1,
+    "caloriesPerServing": 450,
+    "proteinPerServing": 30,
+    "carbsPerServing": 45,
+    "fatsPerServing": 18,
+    "dietaryTags": [
+      "gluten-free"
+    ],
+    "cuisine": "Japanese",
+    "difficulty": "easy",
+    "equipment": [
+      "grill",
+      "rice-cooker",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "1c318208-290f-43ba-bc96-704d945e6fbd",
+    "name": "Mushroom Soup",
+    "nameLV": "Sēņu zupa",
+    "description": "Creamy mushroom soup.",
+    "ingredients": [
+      {
+        "id": "b5c5050b-e18f-4970-84f2-e7e9f3a985ab",
+        "ingredientName": "mushrooms",
+        "quantity": 300,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "2d7458e0-d303-498b-8f57-559fa10154bf",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "679387c3-0fb7-4af9-9792-e9db8be80399",
+        "ingredientName": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "isOptional": false
+      },
+      {
+        "id": "9d40b00e-75a0-410d-a9b9-f8d328794871",
+        "ingredientName": "cream",
+        "quantity": 150,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "49fcdc68-0c77-48a5-a662-20ee97cdeb0e",
+        "ingredientName": "vegetable broth",
+        "quantity": 500,
+        "unit": "ml",
+        "isOptional": false
+      },
+      {
+        "id": "46b0de76-2a2c-4fb6-8fa7-f01b00ae92e2",
+        "ingredientName": "butter",
+        "quantity": 20,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "4dc1a413-4f87-49ed-999a-48b42c48800f",
+        "ingredientName": "thyme",
+        "quantity": 3,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "fab38218-852c-49af-a4b3-ddd147e3dd0f",
+        "ingredientName": "salt",
+        "quantity": 5,
+        "unit": "g",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sauté mushrooms in butter until browned.",
+      "Add onion and garlic, cook 3 minutes.",
+      "Add broth and thyme, simmer 15 minutes.",
+      "Blend until smooth, stir in cream.",
+      "Season with salt."
+    ],
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "caloriesPerServing": 220,
+    "proteinPerServing": 6,
+    "carbsPerServing": 15,
+    "fatsPerServing": 15,
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "cuisine": "European",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "immersion-blender",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  },
+  {
+    "id": "e9b4effd-5ad6-42db-9796-c93750e7c71c",
+    "name": "Minestrone",
+    "nameLV": "Minestrone",
+    "description": "Italian vegetable soup with beans and pasta.",
+    "ingredients": [
+      {
+        "id": "df446592-24c2-4b98-97b2-ca41e8022e4d",
+        "ingredientName": "canned beans",
+        "quantity": 200,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "fdd50ee5-c87a-4a08-a55c-46d69049c831",
+        "ingredientName": "carrot",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "30fc2431-373e-4409-8e21-85dbcc3606ac",
+        "ingredientName": "celery",
+        "quantity": 2,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "d143c2d9-57a1-4a96-af9a-8f3cc767c4cd",
+        "ingredientName": "zucchini",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "c75721ec-d8ba-413a-af3c-d7e128dd13bb",
+        "ingredientName": "tomatoes",
+        "quantity": 3,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "7478131c-9b6d-42bf-8961-8ef1597ee030",
+        "ingredientName": "pasta",
+        "quantity": 100,
+        "unit": "g",
+        "isOptional": false
+      },
+      {
+        "id": "406055d2-da57-4dcc-ac50-f20a0e2e8b84",
+        "ingredientName": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "isOptional": false
+      },
+      {
+        "id": "3e5b2791-12f4-4788-911b-ed492ff2b80f",
+        "ingredientName": "vegetable broth",
+        "quantity": 1000,
+        "unit": "ml",
+        "isOptional": false
+      }
+    ],
+    "steps": [
+      "Sauté onion, carrot, and celery.",
+      "Add tomatoes and broth, simmer 20 minutes.",
+      "Add zucchini and beans, cook 10 minutes.",
+      "Add pasta, cook until tender.",
+      "Serve with parmesan."
+    ],
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "caloriesPerServing": 280,
+    "proteinPerServing": 12,
+    "carbsPerServing": 45,
+    "fatsPerServing": 6,
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "equipment": [
+      "pot",
+      "knife",
+      "cutting-board"
+    ],
+    "imageUrl": null
+  }
+]
