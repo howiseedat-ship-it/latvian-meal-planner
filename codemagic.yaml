@@ -25,14 +25,22 @@ workflows:
       - name: Package IPA
         script: |
           set -e
-          APP_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "*.app" -maxdepth 1 | head -1)
-          if [ -z "$APP_PATH" ]; then
-            echo "No .app found"
+          BIN_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "LatvianMealPlanner" -type f -maxdepth 1 | head -1)
+          if [ -z "$BIN_PATH" ]; then
+            echo "No binary found"
             exit 1
           fi
-          mkdir -p build/IPA/Payload
-          cp -R "$APP_PATH" build/IPA/Payload/
-          (cd build/IPA && zip -r -X ../LatvianMealPlanner.ipa Payload)
+          echo "Found binary: $BIN_PATH"
+          APP_DIR="build/IPA/Payload/LatvianMealPlanner.app"
+          mkdir -p "$APP_DIR"
+          cp "$BIN_PATH" "$APP_DIR/LatvianMealPlanner"
+          cp Resources/Info.plist "$APP_DIR/Info.plist"
+          if [ -f Sources/Data/recipes.json ]; then
+            cp Sources/Data/recipes.json "$APP_DIR/recipes.json"
+          fi
+          cd build/IPA
+          zip -r -X ../LatvianMealPlanner.ipa Payload
+          cd ../..
           ls -la build/LatvianMealPlanner.ipa
     artifacts:
       - build/LatvianMealPlanner.ipa
