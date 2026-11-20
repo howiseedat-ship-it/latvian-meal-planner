@@ -119,6 +119,8 @@ struct ShoppingListContent: View {
                     Button("Удалить", systemImage: "trash", role: .destructive) {
                         onDelete()
                     }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
                 }
             }
         })

@@ -33,6 +33,8 @@ struct MealPlanView: View {
                         Button("Удалить план", systemImage: "trash", role: .destructive) {
                             showDeleteConfirmation = true
                         }
+                    } label: {
+                        Image(systemName: "ellipsis.circle")
                     }
                 }
             } else {
