@@ -1,0 +1,5 @@
+name: latvian_meal_planner
+description: Latvian Meal Planner iOS app
+version: 1.0.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
