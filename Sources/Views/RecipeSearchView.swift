@@ -44,7 +44,7 @@ struct RecipeSearchView: View {
         .onChange(of: searchQuery) { _ in
             applyFilters()
         }
-        .toolbar {
+        .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Section("Кухня") {
@@ -77,7 +77,7 @@ struct RecipeSearchView: View {
                         .symbolVariant((selectedCuisine != nil || selectedDifficulty != nil) ? .fill : .none)
                 }
             }
-        }
+        })
         .onAppear {
             applyFilters()
         }

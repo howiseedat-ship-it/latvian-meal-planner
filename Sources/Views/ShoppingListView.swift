@@ -110,7 +110,7 @@ struct ShoppingListContent: View {
         .listStyle(.insetGrouped)
         .navigationTitle("Список покупок")
         .navigationBarTitleDisplayMode(.large)
-        .toolbar {
+        .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Button("Создать новый", systemImage: "plus") {
@@ -121,7 +121,7 @@ struct ShoppingListContent: View {
                     }
                 }
             }
-        }
+        })
     }
 }
 
@@ -199,7 +199,7 @@ struct GenerateListSheet: View {
             }
             .navigationTitle("Выберите рецепты")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
+            .toolbar(content: {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Отмена") { dismiss() }
                 }
@@ -212,7 +212,7 @@ struct GenerateListSheet: View {
                     }
                     .disabled(selectedRecipes.isEmpty)
                 }
-            }
+            })
             .onAppear {
                 recipes = RecipeService.shared.loadRecipes()
             }

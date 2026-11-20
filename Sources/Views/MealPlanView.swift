@@ -23,7 +23,7 @@ struct MealPlanView: View {
         .navigationTitle("План питания")
         .navigationBarTitleDisplayMode(.large)
         .background(Color(.systemGroupedBackground))
-        .toolbar {
+        .toolbar(content: {
             if mealPlan != nil {
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
@@ -44,7 +44,7 @@ struct MealPlanView: View {
                     }
                 }
             }
-        }
+        })
         .confirmationDialog("Удалить план питания?", isPresented: $showDeleteConfirmation) {
             Button("Удалить", role: .destructive) {
                 mealPlan = nil
