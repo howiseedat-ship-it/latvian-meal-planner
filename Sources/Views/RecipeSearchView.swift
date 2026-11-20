@@ -226,7 +226,7 @@ struct RecipeDetailView: View {
                 HStack(spacing: 8) {
                     Image(systemName: ingredient.isOptional ? "circle" : "circle.fill")
                         .font(.caption2)
-                        .foregroundStyle(ingredient.isOptional ? .secondary : .blue)
+                        .foregroundStyle(ingredient.isOptional ? Color.secondary : Color.blue)
                     Text("\(formatQuantity(ingredient.quantity)) \(ingredient.unit) — \(ingredient.ingredientName)")
                         .font(.subheadline)
                     if ingredient.isOptional {

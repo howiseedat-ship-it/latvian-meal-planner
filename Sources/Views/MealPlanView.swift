@@ -45,7 +45,7 @@ struct MealPlanView: View {
                 }
             }
         }
-        .confirmationDialog("Удалить план питания?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+        .confirmationDialog("Удалить план питания?", isPresented: $showDeleteConfirmation) {
             Button("Удалить", role: .destructive) {
                 mealPlan = nil
                 UserDefaults.standard.removeObject(forKey: mealPlanKey)

@@ -36,7 +36,7 @@ struct ShoppingListView: View {
                 saveList()
             }
         }
-        .confirmationDialog("Удалить список покупок?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+        .confirmationDialog("Удалить список покупок?", isPresented: $showDeleteConfirmation) {
             Button("Удалить", role: .destructive) {
                 shoppingList = nil
                 UserDefaults.standard.removeObject(forKey: shoppingListKey)
@@ -135,7 +135,7 @@ struct ShoppingItemRow: View {
             } label: {
                 Image(systemName: item.isPurchased ? "checkmark.circle.fill" : "circle")
                     .font(.title3)
-                    .foregroundStyle(item.isPurchased ? .green : .secondary)
+                    .foregroundStyle(item.isPurchased ? Color.green : Color.secondary)
             }
             .buttonStyle(.plain)
 
