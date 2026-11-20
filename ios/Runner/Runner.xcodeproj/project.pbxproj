@@ -1,0 +1,142 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+		089C16692103B70F00C3A7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C166B2103B70F00C3A7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C166C2103B70F00C3A7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C167C2103B70F00C3A7F3 /* Runner.app */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = Runner.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		089C167D2103B70F00C3A7F3 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089C16872103B70F00C3A7F3 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				089C16692103B70F00C3A7F3 /* Sources */,
+				089C166B2103B70F00C3A7F3 /* Frameworks */,
+				089C166C2103B70F00C3A7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 089C167C2103B70F00C3A7F3 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		089C167E2103B70F00C3A7F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1400;
+			};
+			buildConfigurationList = 089C16802103B70F00C3A7F3 /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C167F2103B70F00C3A7F3;
+			productRefGroup = 089C167B2103B70F00C3A7F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				089C167D2103B70F00C3A7F3 /* Runner */,
+			);
+		};
+		089C167F2103B70F00C3A7F3 = {
+			isa = PBXGroup;
+			children = (
+				089C167B2103B70F00C3A7F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		089C167B2103B70F00C3A7F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				089C167C2103B70F00C3A7F3 /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		089C16872103B70F00C3A7F3 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089C16882103B70F00C3A7F3 /* Debug */,
+				089C16892103B70F00C3A7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		089C16882103B70F00C3A7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Runner;
+			};
+			name = Debug;
+		};
+		089C16892103B70F00C3A7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Runner;
+			};
+			name = Release;
+		};
+		089C16802103B70F00C3A7F3 /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089C16812103B70F00C3A7F3 /* Debug */,
+				089C16822103B70F00C3A7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		089C16812103B70F00C3A7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		089C16822103B70F00C3A7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+	};
+	rootObject = 089C167E2103B70F00C3A7F3 /* Project object */;
+}
