@@ -3,110 +3,168 @@ import SwiftUI
 struct ShoppingListView: View {
     @State private var shoppingList: ShoppingList?
     @State private var showGenerateSheet = false
+    @State private var showDeleteConfirmation = false
+
+    private let shoppingListKey = "saved_shopping_list"
 
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    if let list = shoppingList {
-                        listHeader(list)
-                        listItems(list)
-                        totalSection(list)
-                    } else {
-                        emptyState
-                    }
-                }
-                .padding()
-            }
-            .navigationTitle("Shopping List")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
+        Group {
+            if let list = shoppingList {
+                ShoppingListContent(
+                    list: Binding(
+                        get: { shoppingList ?? list },
+                        set: { newValue in
+                            shoppingList = newValue
+                            saveList()
+                        }
+                    ),
+                    onDelete: {
+                        showDeleteConfirmation = true
+                    },
+                    onNewList: {
                         showGenerateSheet = true
-                    } label: {
-                        Label("Generate", systemImage: "plus")
                     }
-                }
-            }
-            .sheet(isPresented: $showGenerateSheet) {
-                GenerateListSheet { list in
-                    shoppingList = list
-                }
+                )
+            } else {
+                emptyState
             }
         }
-    }
-
-    private func listHeader(_ list: ShoppingList) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(list.name)
-                .font(.headline)
-            Text("\(list.items.count) items")
-                .font(.caption)
-                .foregroundColor(.secondary)
-        }
-    }
-
-    private func listItems(_ list: ShoppingList) -> some View {
-        VStack(spacing: 8) {
-            ForEach(list.items) { item in
-                ShoppingItemRow(item: item)
+        .background(Color(.systemGroupedBackground))
+        .sheet(isPresented: $showGenerateSheet) {
+            GenerateListSheet { list in
+                shoppingList = list
+                saveList()
             }
         }
-    }
-
-    private func totalSection(_ list: ShoppingList) -> some View {
-        HStack {
-            Text("Total")
-                .font(.headline)
-            Spacer()
-            Text(list.totalCost > 0 ? String(format: "€%.2f", list.totalCost) : "—")
-                .font(.headline)
-                .bold()
+        .confirmationDialog("Удалить список покупок?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+            Button("Удалить", role: .destructive) {
+                shoppingList = nil
+                UserDefaults.standard.removeObject(forKey: shoppingListKey)
+            }
+            Button("Отмена", role: .cancel) {}
         }
-        .padding()
-        .background(Color.gray.opacity(0.1))
-        .cornerRadius(8)
+        .onAppear {
+            loadSavedList()
+        }
     }
 
     private var emptyState: some View {
         VStack(spacing: 16) {
             Image(systemName: "cart")
                 .font(.system(size: 64))
-                .foregroundColor(.secondary)
-            Text("No shopping list yet")
+                .foregroundStyle(.secondary)
+            Text("Нет списка покупок")
                 .font(.headline)
-            Text("Generate a list from your meal plan or recipes")
-                .foregroundColor(.secondary)
+            Text("Создайте список из рецептов")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
 
-            Button("Generate List") {
+            Button("Создать список") {
                 showGenerateSheet = true
             }
             .buttonStyle(.borderedProminent)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
+    }
+
+    private func loadSavedList() {
+        if let data = UserDefaults.standard.data(forKey: shoppingListKey),
+           let list = try? JSONDecoder().decode(ShoppingList.self, from: data) {
+            shoppingList = list
+        }
+    }
+
+    private func saveList() {
+        if let list = shoppingList, let data = try? JSONEncoder().encode(list) {
+            UserDefaults.standard.set(data, forKey: shoppingListKey)
+        }
+    }
+}
+
+struct ShoppingListContent: View {
+    @Binding var list: ShoppingList
+    let onDelete: () -> Void
+    let onNewList: () -> Void
+
+    var body: some View {
+        List {
+            Section {
+                ForEach($list.items) { $item in
+                    ShoppingItemRow(item: $item)
+                }
+            }
+
+            Section {
+                HStack {
+                    Text("Итого")
+                        .font(.headline)
+                    Spacer()
+                    Text(list.totalCost > 0 ? String(format: "€%.2f", list.totalCost) : "—")
+                        .font(.headline)
+                        .bold()
+                }
+            }
+        }
+        .listStyle(.insetGrouped)
+        .navigationTitle("Список покупок")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Button("Создать новый", systemImage: "plus") {
+                        onNewList()
+                    }
+                    Button("Удалить", systemImage: "trash", role: .destructive) {
+                        onDelete()
+                    }
+                }
+            }
+        }
     }
 }
 
 struct ShoppingItemRow: View {
-    let item: ShoppingItem
+    @Binding var item: ShoppingItem
 
     var body: some View {
-        HStack {
-            Image(systemName: "circle")
-                .foregroundColor(.gray)
-            Text(item.ingredientName)
+        HStack(spacing: 12) {
+            Button {
+                item.isPurchased.toggle()
+            } label: {
+                Image(systemName: item.isPurchased ? "checkmark.circle.fill" : "circle")
+                    .font(.title3)
+                    .foregroundStyle(item.isPurchased ? .green : .secondary)
+            }
+            .buttonStyle(.plain)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(item.ingredientName)
+                    .font(.body)
+                    .strikethrough(item.isPurchased)
+                    .foregroundStyle(item.isPurchased ? .secondary : .primary)
+                Text("\(formatQuantity(item.quantity)) \(item.unit)")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             Spacer()
-            Text("\(item.quantity) \(item.unit)")
-                .foregroundColor(.secondary)
+
             if let price = item.price {
                 Text(String(format: "€%.2f", price))
-                    .foregroundColor(.green)
+                    .font(.subheadline)
+                    .foregroundStyle(.green)
             }
         }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(8)
+        .padding(.vertical, 4)
+    }
+
+    private func formatQuantity(_ quantity: Double) -> String {
+        if quantity == quantity.rounded() {
+            return String(Int(quantity))
+        }
+        return String(format: "%.1f", quantity)
     }
 }
 
@@ -115,17 +173,18 @@ struct GenerateListSheet: View {
     let onSelect: (ShoppingList) -> Void
 
     @State private var selectedRecipes: Set<UUID> = []
+    @State private var recipes: [Recipe] = []
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                ForEach(RecipeService.shared.loadRecipes()) { recipe in
+                ForEach(recipes) { recipe in
                     HStack {
                         Text(recipe.name)
                         Spacer()
                         if selectedRecipes.contains(recipe.id) {
-                            Image(systemName: "checkmark")
-                                .foregroundColor(.blue)
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundStyle(.blue)
                         }
                     }
                     .contentShape(Rectangle())
@@ -138,25 +197,31 @@ struct GenerateListSheet: View {
                     }
                 }
             }
-            .navigationTitle("Select Recipes")
+            .navigationTitle("Выберите рецепты")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") { dismiss() }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Отмена") { dismiss() }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Generate") {
-                        let recipes = RecipeService.shared.loadRecipes().filter { selectedRecipes.contains($0.id) }
-                        let list = ShoppingListService.shared.generateShoppingList(fromRecipes: recipes)
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Создать") {
+                        let selected = recipes.filter { selectedRecipes.contains($0.id) }
+                        let list = ShoppingListService.shared.generateShoppingList(fromRecipes: selected)
                         onSelect(list)
                         dismiss()
                     }
                     .disabled(selectedRecipes.isEmpty)
                 }
             }
+            .onAppear {
+                recipes = RecipeService.shared.loadRecipes()
+            }
         }
     }
 }
 
 #Preview {
-    ShoppingListView()
+    NavigationStack {
+        ShoppingListView()
+    }
 }

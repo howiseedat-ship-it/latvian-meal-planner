@@ -3,7 +3,7 @@ import Foundation
 struct ShoppingList: Identifiable, Codable, Hashable {
     let id: UUID
     let name: String
-    let items: [ShoppingItem]
+    var items: [ShoppingItem]
     let createdAt: Date
 
     init(
@@ -30,7 +30,7 @@ struct ShoppingItem: Identifiable, Codable, Hashable {
     let unit: String
     let store: String?
     let price: Double?
-    let isPurchased: Bool
+    var isPurchased: Bool
     let sourceRecipeId: UUID?
 
     init(

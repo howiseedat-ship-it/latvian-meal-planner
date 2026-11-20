@@ -5,48 +5,54 @@ struct HomeView: View {
     @State private var enteredIngredients: [String] = []
     @State private var matches: [RecipeMatch] = []
     @State private var isSearching = false
+    @State private var showClearConfirmation = false
 
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    headerSection
-                    ingredientInputSection
-                    if isSearching {
-                        searchResultsSection
-                    } else {
-                        quickActionsSection
-                    }
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                headerSection
+                ingredientInputSection
+
+                if isSearching {
+                    searchResultsSection
+                } else {
+                    quickActionsSection
                 }
-                .padding()
             }
-            .navigationTitle("Latvian Meal Planner")
+            .padding()
         }
+        .navigationTitle("Latvian Meal Planner")
+        .navigationBarTitleDisplayMode(.large)
+        .background(Color(.systemGroupedBackground))
     }
 
     private var headerSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("What's in your kitchen?")
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Что в вашей кухне?")
                 .font(.title2)
                 .bold()
-            Text("Enter ingredients you have and get recipe suggestions")
+            Text("Введите ингредиенты и получите рекомендации")
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
         }
     }
 
     private var ingredientInputSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                TextField("Add ingredient (e.g. chicken, tomato, pasta)", text: $ingredientsInput)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            HStack(spacing: 8) {
+                TextField("Добавить ингредиент (курица, томат...)", text: $ingredientsInput)
+                    .textFieldStyle(.roundedBorder)
+                    .submitLabel(.done)
                     .onSubmit { addIngredient() }
 
-                Button("Add") {
+                Button {
                     addIngredient()
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.title2)
+                        .foregroundStyle(.blue)
                 }
-                .buttonStyle(.borderedProminent)
-                .disabled(ingredientsInput.isEmpty)
+                .disabled(ingredientsInput.trimmingCharacters(in: .whitespaces).isEmpty)
             }
 
             if !enteredIngredients.isEmpty {
@@ -55,66 +61,117 @@ struct HomeView: View {
                         ForEach(enteredIngredients, id: \.self) { ingredient in
                             HStack(spacing: 4) {
                                 Text(ingredient)
+                                    .font(.subheadline)
                                 Button {
                                     enteredIngredients.removeAll { $0 == ingredient }
                                 } label: {
                                     Image(systemName: "xmark.circle.fill")
-                                        .foregroundColor(.red)
+                                        .foregroundStyle(.secondary)
                                 }
                             }
                             .padding(.horizontal, 12)
                             .padding(.vertical, 6)
-                            .background(Color.blue.opacity(0.1))
-                            .cornerRadius(16)
+                            .background(Color.blue.opacity(0.12))
+                            .clipShape(Capsule())
                         }
                     }
+                    .padding(.vertical, 4)
                 }
 
-                Button("Find Recipes") {
+                Button {
                     findRecipes()
+                } label: {
+                    Label("Найти рецепты", systemImage: "magnifyingglass")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .frame(maxWidth: .infinity)
+                .controlSize(.large)
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 
     private var searchResultsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Found \(matches.count) recipes")
-                .font(.headline)
-
-            ForEach(matches.prefix(10), id: \.recipe.id) { match in
-                RecipeMatchCard(match: match)
+            HStack {
+                Text("Найдено: \(matches.count)")
+                    .font(.headline)
+                Spacer()
+                Button("Сбросить") {
+                    isSearching = false
+                    matches = []
+                    enteredIngredients = []
+                }
+                .font(.subheadline)
             }
 
             if matches.isEmpty {
-                Text("No recipes found. Try different ingredients.")
-                    .foregroundColor(.secondary)
+                VStack(spacing: 12) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 48))
+                        .foregroundStyle(.secondary)
+                    Text("Ничего не найдено")
+                        .font(.headline)
+                    Text("Попробуйте другие ингредиенты")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity)
+                .padding()
+            } else {
+                ForEach(matches.prefix(10), id: \.recipe.id) { match in
+                    NavigationLink {
+                        RecipeDetailView(recipe: match.recipe)
+                    } label: {
+                        RecipeMatchCard(match: match)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
         }
     }
 
     private var quickActionsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Quick Actions")
+            Text("Быстрые действия")
                 .font(.headline)
 
-            QuickActionCard(
-                title: "5-Ingredient Recipes",
-                icon: "list.bullet",
-                color: .green
-            )
-            QuickActionCard(
-                title: "Latvian Cuisine",
-                icon: "flag",
-                color: .blue
-            )
-            QuickActionCard(
-                title: "Quick Meals (under 30 min)",
-                icon: "clock",
-                color: .orange
-            )
+            VStack(spacing: 8) {
+                QuickActionCard(
+                    title: "Рецепты из 5 ингредиентов",
+                    icon: "list.bullet",
+                    color: .green
+                ) {
+                    isSearching = true
+                    matches = RecipeService.shared.fiveIngredientRecipes()
+                        .map { RecipeMatch(recipe: $0, matchCount: 0, totalIngredients: 0, matchRatio: 1.0, missingIngredients: []) }
+                }
+
+                QuickActionCard(
+                    title: "Латвийская кухня",
+                    icon: "flag",
+                    color: .blue
+                ) {
+                    isSearching = true
+                    matches = RecipeService.shared.loadRecipes()
+                        .filter { $0.cuisine == "Latvian" }
+                        .map { RecipeMatch(recipe: $0, matchCount: 0, totalIngredients: 0, matchRatio: 1.0, missingIngredients: []) }
+                }
+
+                QuickActionCard(
+                    title: "Быстрые блюда (до 30 мин)",
+                    icon: "clock",
+                    color: .orange
+                ) {
+                    isSearching = true
+                    matches = RecipeService.shared.loadRecipes()
+                        .filter { $0.totalTimeMinutes <= 30 }
+                        .map { RecipeMatch(recipe: $0, matchCount: 0, totalIngredients: 0, matchRatio: 1.0, missingIngredients: []) }
+                }
+            }
         }
     }
 
@@ -142,34 +199,35 @@ struct RecipeMatchCard: View {
                 Text(match.recipe.name)
                     .font(.headline)
                 Spacer()
-                Text("\(Int(match.matchRatio * 100))%")
-                    .font(.subheadline)
-                    .bold()
-                    .foregroundColor(match.matchRatio > 0.7 ? .green : .orange)
+                if match.totalIngredients > 0 {
+                    Text("\(Int(match.matchRatio * 100))%")
+                        .font(.subheadline)
+                        .bold()
+                        .foregroundStyle(match.matchRatio > 0.7 ? .green : .orange)
+                }
             }
 
             Text(match.recipe.nameLV)
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
 
             HStack(spacing: 12) {
-                Label("\(match.recipe.totalTimeMinutes) min", systemImage: "clock")
-                Label("\(match.recipe.servings) servings", systemImage: "person.2")
-                Label("\(match.recipe.caloriesPerServing) kcal", systemImage: "flame")
+                Label("\(match.recipe.totalTimeMinutes) мин", systemImage: "clock")
+                Label("\(match.recipe.servings) порц.", systemImage: "person.2")
+                Label("\(match.recipe.caloriesPerServing) ккал", systemImage: "flame")
             }
             .font(.caption)
-            .foregroundColor(.secondary)
+            .foregroundStyle(.secondary)
 
             if !match.missingIngredients.isEmpty {
-                Text("Missing: \(match.missingIngredients.map { $0.ingredientName }.joined(separator: ", "))")
+                Text("Не хватает: \(match.missingIngredients.map { $0.ingredientName }.joined(separator: ", "))")
                     .font(.caption)
-                    .foregroundColor(.red)
+                    .foregroundStyle(.red)
             }
         }
         .padding()
-        .background(Color.white)
-        .cornerRadius(12)
-        .shadow(radius: 2)
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 
@@ -177,25 +235,33 @@ struct QuickActionCard: View {
     let title: String
     let icon: String
     let color: Color
+    let action: () -> Void
 
     var body: some View {
-        HStack(spacing: 12) {
-            Image(systemName: icon)
-                .font(.title2)
-                .foregroundColor(color)
-            Text(title)
-                .font(.headline)
-            Spacer()
-            Image(systemName: "chevron.right")
-                .foregroundColor(.secondary)
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Image(systemName: icon)
+                    .font(.title2)
+                    .foregroundStyle(color)
+                    .frame(width: 40)
+                Text(title)
+                    .font(.headline)
+                    .foregroundStyle(.primary)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding()
+            .background(Color(.secondarySystemGroupedBackground))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
         }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(12)
-        .shadow(radius: 2)
+        .buttonStyle(.plain)
     }
 }
 
 #Preview {
-    HomeView()
+    NavigationStack {
+        HomeView()
+    }
 }

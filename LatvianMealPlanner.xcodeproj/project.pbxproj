@@ -228,6 +228,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latvianmealplanner.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Resources/Info.plist";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
@@ -242,6 +243,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latvianmealplanner.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Resources/Info.plist";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;

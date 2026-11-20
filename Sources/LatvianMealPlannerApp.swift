@@ -11,25 +11,33 @@ struct LatvianMealPlannerApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                HomeView()
-                    .tabItem {
-                        Label("Меню", systemImage: "house.fill")
-                    }
+                NavigationStack {
+                    HomeView()
+                }
+                .tabItem {
+                    Label("Меню", systemImage: "house.fill")
+                }
 
-                RecipeSearchView()
-                    .tabItem {
-                        Label("Рецепты", systemImage: "book.fill")
-                    }
+                NavigationStack {
+                    RecipeSearchView()
+                }
+                .tabItem {
+                    Label("Рецепты", systemImage: "book.fill")
+                }
 
-                MealPlanView()
-                    .tabItem {
-                        Label("План", systemImage: "calendar")
-                    }
+                NavigationStack {
+                    MealPlanView()
+                }
+                .tabItem {
+                    Label("План", systemImage: "calendar")
+                }
 
-                ShoppingListView()
-                    .tabItem {
-                        Label("Покупки", systemImage: "cart.fill")
-                    }
+                NavigationStack {
+                    ShoppingListView()
+                }
+                .tabItem {
+                    Label("Покупки", systemImage: "cart.fill")
+                }
             }
         }
     }

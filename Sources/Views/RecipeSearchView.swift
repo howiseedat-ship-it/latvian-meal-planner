@@ -3,114 +3,111 @@ import SwiftUI
 struct RecipeSearchView: View {
     @State private var searchQuery = ""
     @State private var results: [Recipe] = []
-    @State private var isSearching = false
     @State private var selectedCuisine: String? = nil
     @State private var selectedDifficulty: Difficulty? = nil
-    @State private var maxTime: Int? = nil
+    @State private var showFilters = false
 
-    private let cuisines = ["All", "Latvian", "Italian", "Hungarian", "Asian", "Mediterranean", "American", "French", "German", "Polish", "Lithuanian", "Estonian"]
-    private let difficulties: [Difficulty] = [.easy, .medium, .hard]
+    private let cuisines = ["Latvian", "Italian", "Hungarian", "Asian", "Mediterranean", "American", "French", "German", "Polish", "Lithuanian", "Estonian"]
 
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    searchSection
-                    filterSection
-                    resultsSection
+        List {
+            if results.isEmpty {
+                VStack(spacing: 12) {
+                    Image(systemName: "book")
+                        .font(.system(size: 48))
+                        .foregroundStyle(.secondary)
+                    Text("Рецепты не найдены")
+                        .font(.headline)
+                    Text("Попробуйте изменить запрос или фильтры")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
                 }
-                .padding()
-            }
-            .navigationTitle("Recipes")
-        }
-    }
-
-    private var searchSection: some View {
-        HStack {
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.secondary)
-            TextField("Search recipes...", text: $searchQuery)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .onSubmit { search() }
-        }
-    }
-
-    private var filterSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Filters")
-                .font(.headline)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(cuisines, id: \.self) { cuisine in
-                        Button {
-                            selectedCuisine = cuisine == "All" ? nil : cuisine
-                            search()
-                        } label: {
-                            Text(cuisine)
-                                .padding(.horizontal, 12)
-                                .padding(.vertical, 6)
-                                .background(selectedCuisine == cuisine ? Color.blue : Color.gray.opacity(0.2))
-                                .foregroundColor(selectedCuisine == cuisine ? .white : .primary)
-                                .cornerRadius(16)
-                        }
-                    }
-                }
-            }
-
-            HStack(spacing: 8) {
-                ForEach(difficulties, id: \.self) { difficulty in
-                    Button {
-                        selectedDifficulty = selectedDifficulty == difficulty ? nil : difficulty
-                        search()
-                    } label: {
-                        Text(difficulty.rawValue.capitalized)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 6)
-                            .background(selectedDifficulty == difficulty ? Color.blue : Color.gray.opacity(0.2))
-                            .foregroundColor(selectedDifficulty == difficulty ? .white : .primary)
-                            .cornerRadius(16)
-                    }
-                }
-            }
-        }
-    }
-
-    private var resultsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            if isSearching {
-                Text("Showing \(results.count) recipes")
-                    .font(.headline)
-
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 40)
+                .listRowSeparator(.hidden)
+            } else {
                 ForEach(results) { recipe in
-                    NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                    NavigationLink {
+                        RecipeDetailView(recipe: recipe)
+                    } label: {
                         RecipeCard(recipe: recipe)
                     }
-                    .buttonStyle(.plain)
                 }
-            } else {
-                Text("Search for recipes or browse by category")
-                    .foregroundColor(.secondary)
+                .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
             }
+        }
+        .listStyle(.insetGrouped)
+        .navigationTitle("Рецепты")
+        .navigationBarTitleDisplayMode(.large)
+        .searchable(text: $searchQuery, prompt: "Поиск рецептов...")
+        .onChange(of: searchQuery) { _ in
+            applyFilters()
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Section("Кухня") {
+                        Button("Все") {
+                            selectedCuisine = nil
+                            applyFilters()
+                        }
+                        ForEach(cuisines, id: \.self) { cuisine in
+                            Button(cuisine) {
+                                selectedCuisine = cuisine
+                                applyFilters()
+                            }
+                        }
+                    }
+
+                    Section("Сложность") {
+                        Button("Любая") {
+                            selectedDifficulty = nil
+                            applyFilters()
+                        }
+                        ForEach(Difficulty.allCases, id: \.self) { difficulty in
+                            Button(difficulty.displayName) {
+                                selectedDifficulty = difficulty
+                                applyFilters()
+                            }
+                        }
+                    }
+                } label: {
+                    Image(systemName: "line.3.horizontal.decrease.circle")
+                        .symbolVariant((selectedCuisine != nil || selectedDifficulty != nil) ? .fill : .none)
+                }
+            }
+        }
+        .onAppear {
+            applyFilters()
         }
     }
 
-    private func search() {
-        isSearching = true
-        if searchQuery.isEmpty {
-            results = RecipeService.shared.loadRecipes()
-        } else {
-            results = RecipeService.shared.searchRecipes(query: searchQuery)
+    private func applyFilters() {
+        var filtered = RecipeService.shared.loadRecipes()
+
+        if !searchQuery.isEmpty {
+            filtered = RecipeService.shared.searchRecipes(query: searchQuery)
         }
 
         if let cuisine = selectedCuisine {
-            results = results.filter { $0.cuisine == cuisine }
+            filtered = filtered.filter { $0.cuisine == cuisine }
         }
+
         if let difficulty = selectedDifficulty {
-            results = results.filter { $0.difficulty == difficulty }
+            filtered = filtered.filter { $0.difficulty == difficulty }
         }
-        if let maxTime = maxTime {
-            results = results.filter { $0.totalTimeMinutes <= maxTime }
+
+        results = filtered
+    }
+}
+
+extension Difficulty {
+    var displayName: String {
+        switch self {
+        case .easy: return "Лёгкий"
+        case .medium: return "Средний"
+        case .hard: return "Сложный"
         }
     }
 }
@@ -122,33 +119,35 @@ struct RecipeCard: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(recipe.name)
                 .font(.headline)
+
             Text(recipe.nameLV)
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
 
             HStack(spacing: 12) {
-                Label("\(recipe.totalTimeMinutes) min", systemImage: "clock")
-                Label("\(recipe.servings) servings", systemImage: "person.2")
-                Label("\(recipe.caloriesPerServing) kcal", systemImage: "flame")
+                Label("\(recipe.totalTimeMinutes) мин", systemImage: "clock")
+                Label("\(recipe.servings) порц.", systemImage: "person.2")
+                Label("\(recipe.caloriesPerServing) ккал", systemImage: "flame")
             }
             .font(.caption)
-            .foregroundColor(.secondary)
+            .foregroundStyle(.secondary)
 
-            HStack(spacing: 4) {
-                ForEach(recipe.dietaryTags.prefix(3), id: \.self) { tag in
-                    Text(tag.rawValue)
-                        .font(.caption2)
-                        .padding(.horizontal, 6)
-                        .padding(.vertical, 2)
-                        .background(Color.green.opacity(0.2))
-                        .cornerRadius(4)
+            if !recipe.dietaryTags.isEmpty {
+                HStack(spacing: 4) {
+                    ForEach(recipe.dietaryTags.prefix(3), id: \.self) { tag in
+                        Text(tag.rawValue)
+                            .font(.caption2)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.green.opacity(0.15))
+                            .clipShape(Capsule())
+                    }
                 }
             }
         }
         .padding()
-        .background(Color.white)
-        .cornerRadius(12)
-        .shadow(radius: 2)
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 
@@ -165,103 +164,151 @@ struct RecipeDetailView: View {
         let scaledRecipe = RecipeService.shared.scaledRecipe(recipe, servings: servings)
 
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: 20) {
                 headerSection(scaledRecipe)
                 servingsSection
                 ingredientsSection(scaledRecipe)
                 stepsSection
                 nutritionSection
-                equipmentSection
+                if !recipe.equipment.isEmpty {
+                    equipmentSection
+                }
             }
             .padding()
         }
         .navigationTitle(recipe.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .background(Color(.systemGroupedBackground))
     }
 
     private func headerSection(_ recipe: Recipe) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(recipe.nameLV)
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
+
             Text(recipe.description)
                 .font(.body)
 
-            HStack(spacing: 12) {
-                Label("\(recipe.totalTimeMinutes) min", systemImage: "clock")
-                Label("\(recipe.cuisine)", systemImage: "globe")
-                Label(recipe.difficulty.rawValue.capitalized, systemImage: "gauge")
+            HStack(spacing: 16) {
+                Label("\(recipe.totalTimeMinutes) мин", systemImage: "clock")
+                Label(recipe.cuisine, systemImage: "globe")
+                Label(recipe.difficulty.displayName, systemImage: "gauge")
             }
             .font(.caption)
-            .foregroundColor(.secondary)
+            .foregroundStyle(.secondary)
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
     private var servingsSection: some View {
         HStack {
-            Text("Servings: \(servings)")
+            Label("Порции: \(servings)", systemImage: "person.2")
                 .font(.headline)
-            Stepper(value: $servings, in: 1...20) {
+            Spacer()
+            Stepper(value: $servings, in: 1...20, step: 1) {
                 EmptyView()
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
     private func ingredientsSection(_ recipe: Recipe) -> some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Ingredients")
+            Text("Ингредиенты")
                 .font(.headline)
+
             ForEach(recipe.ingredients) { ingredient in
-                HStack {
-                    Text(ingredient.isOptional ? "○" : "●")
-                        .foregroundColor(ingredient.isOptional ? .gray : .blue)
-                    Text("\(ingredient.quantity) \(ingredient.unit) \(ingredient.ingredientName)")
+                HStack(spacing: 8) {
+                    Image(systemName: ingredient.isOptional ? "circle" : "circle.fill")
+                        .font(.caption2)
+                        .foregroundStyle(ingredient.isOptional ? .secondary : .blue)
+                    Text("\(formatQuantity(ingredient.quantity)) \(ingredient.unit) — \(ingredient.ingredientName)")
+                        .font(.subheadline)
                     if ingredient.isOptional {
-                        Text("(optional)")
+                        Text("(по желанию)")
                             .font(.caption)
-                            .foregroundColor(.secondary)
+                            .foregroundStyle(.secondary)
                     }
                 }
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
     private var stepsSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Steps")
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Приготовление")
                 .font(.headline)
+
             ForEach(Array(recipe.steps.enumerated()), id: \.offset) { index, step in
-                HStack(alignment: .top, spacing: 8) {
-                    Text("\(index + 1).")
-                        .font(.headline)
-                        .foregroundColor(.blue)
+                HStack(alignment: .top, spacing: 12) {
+                    Text("\(index + 1)")
+                        .font(.subheadline)
+                        .bold()
+                        .foregroundStyle(.white)
+                        .frame(width: 24, height: 24)
+                        .background(Color.blue)
+                        .clipShape(Circle())
                     Text(step)
+                        .font(.subheadline)
                 }
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
     private var nutritionSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Nutrition (per serving)")
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Питательная ценность (на порцию)")
                 .font(.headline)
-            HStack(spacing: 16) {
-                NutritionStat(label: "Calories", value: "\(recipe.caloriesPerServing)", unit: "kcal")
-                NutritionStat(label: "Protein", value: "\(recipe.proteinPerServing)", unit: "g")
-                NutritionStat(label: "Carbs", value: "\(recipe.carbsPerServing)", unit: "g")
-                NutritionStat(label: "Fats", value: "\(recipe.fatsPerServing)", unit: "g")
+
+            HStack(spacing: 8) {
+                NutritionStat(label: "Калории", value: "\(recipe.caloriesPerServing)", unit: "ккал")
+                NutritionStat(label: "Белки", value: String(format: "%.0f", recipe.proteinPerServing), unit: "г")
+                NutritionStat(label: "Углеводы", value: String(format: "%.0f", recipe.carbsPerServing), unit: "г")
+                NutritionStat(label: "Жиры", value: String(format: "%.0f", recipe.fatsPerServing), unit: "г")
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
     private var equipmentSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Equipment Needed")
+            Text("Посуда и оборудование")
                 .font(.headline)
-            ForEach(recipe.equipment, id: \.self) { equipment in
-                Label(equipment.rawValue, systemImage: "wrench")
-                    .font(.caption)
+
+            HStack(spacing: 6) {
+                ForEach(recipe.equipment, id: \.self) { equipment in
+                    Label(equipment.rawValue, systemImage: "wrench")
+                        .font(.caption)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color.gray.opacity(0.15))
+                        .clipShape(Capsule())
+                }
             }
         }
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private func formatQuantity(_ quantity: Double) -> String {
+        if quantity == quantity.rounded() {
+            return String(Int(quantity))
+        }
+        return String(format: "%.1f", quantity)
     }
 }
 
@@ -272,20 +319,22 @@ struct NutritionStat: View {
 
     var body: some View {
         VStack(spacing: 4) {
-            Text(value + " " + unit)
-                .font(.headline)
+            Text("\(value) \(unit)")
+                .font(.subheadline)
                 .bold()
             Text(label)
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(.caption2)
+                .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
-        .padding()
-        .background(Color.gray.opacity(0.1))
-        .cornerRadius(8)
+        .padding(.vertical, 8)
+        .background(Color(.systemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 
 #Preview {
-    RecipeSearchView()
+    NavigationStack {
+        RecipeSearchView()
+    }
 }
